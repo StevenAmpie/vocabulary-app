@@ -58,7 +58,7 @@ export const AudioPlayerButton: React.FC<AudioPlayerButtonProps> = ({
   };
 
   const sizeClasses = {
-    sm: 'w-10 h-10 p-2 text-sm',
+    sm: 'w-11 h-11 p-2.5 text-sm',
     md: 'w-12 h-12 p-3 text-base',
     lg: 'w-16 h-16 p-4 text-xl',
   };
@@ -71,14 +71,12 @@ export const AudioPlayerButton: React.FC<AudioPlayerButtonProps> = ({
         disabled={isPlaying}
         aria-label={label}
         aria-describedby={hasError ? errorId : undefined}
-        className={`min-w-touch min-h-touch rounded-full flex items-center justify-center transition-all 
-          bg-emerald-600 hover:bg-emerald-700 text-white shadow-md hover:shadow-lg active:scale-95 
-          disabled:opacity-75 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-emerald-300 ${sizeClasses[size]} ${className}`}
+        className={`relative flex min-h-touch min-w-touch items-center justify-center rounded-full bg-emerald-900 text-white shadow-[0_1px_2px_rgba(28,25,23,0.08),0_8px_20px_-8px_rgba(6,95,70,0.45)] transition-transform duration-150 hover:bg-emerald-800 hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-emerald-800 focus-visible:ring-offset-2 ${sizeClasses[size]} ${className}`}
       >
         {hasError ? (
           <VolumeX className="w-full h-full" aria-hidden="true" />
         ) : (
-          <Volume2 className={`w-full h-full ${isPlaying ? 'animate-pulse' : ''}`} aria-hidden="true" />
+          <Volume2 className={`h-full w-full ${isPlaying ? 'animate-pulse' : ''}`} aria-hidden="true" />
         )}
       </button>
       {hasError && (

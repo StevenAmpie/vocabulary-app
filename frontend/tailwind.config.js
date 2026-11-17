@@ -8,16 +8,16 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
+          50: '#ecfdf5',
+          100: '#d1fae5',
+          500: '#059669',
+          600: '#047857',
+          700: '#065f46',
         },
         almanac: {
-          discovered: '#3b82f6',
-          consolidating: '#eab308',
-          mastered: '#10b981',
+          discovered: '#57534e',
+          consolidating: '#92400e',
+          mastered: '#065f46',
         }
       },
       minHeight: {

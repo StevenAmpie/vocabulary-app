@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useRef, useState } from 'react';
+import confetti from 'canvas-confetti';
 import { ArrowLeft, ArrowRight, CheckCircle2, Lightbulb, RotateCcw } from 'lucide-react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { AudioPlayerButton } from '../../components/AudioPlayerButton';
@@ -85,8 +86,27 @@ export function StudySessionPage() {
     }
     if (pageState === 'completed') {
       titleRef.current?.focus();
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        void confetti({ particleCount: 60, spread: 55, origin: { y: 0.7 }, colors: ['#059669', '#d97706', '#0f766e'] });
+      }
     }
   }, [pageState, result]);
+
+  useEffect(() => {
+    if (pageState !== 'ready' || !exercise) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement;
+      if (event.altKey || event.ctrlKey || event.metaKey || target.isContentEditable ||
+          ['TEXTAREA', 'SELECT'].includes(target.tagName) ||
+          (target.tagName === 'INPUT' && (target as HTMLInputElement).name !== 'answer')) return;
+      const index = Number(event.key) - 1;
+      if (index >= 0 && index < exercise.options.length && event.key.length === 1) {
+        setSelectedOptionId(exercise.options[index].id);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [exercise, pageState]);
 
   const sendAttempt = async (request: RecordAttemptRequest) => {
     if (!sessionId) return;
@@ -126,26 +146,28 @@ export function StudySessionPage() {
 
   if (pageState === 'completed') {
     return (
-      <section className="mx-auto max-w-2xl rounded-3xl border border-emerald-200 bg-white p-8 text-center shadow-sm">
-        <CheckCircle2 className="mx-auto h-14 w-14 text-emerald-600" aria-hidden="true" />
-        <h1 ref={titleRef} tabIndex={-1} className="mt-4 text-3xl font-black text-slate-900">
+      <section className="mx-auto max-w-2xl overflow-hidden rounded-[2rem] border border-stone-200 bg-white p-8 text-center shadow-[0_2px_4px_rgba(28,25,23,0.04),0_20px_55px_-28px_rgba(6,95,70,0.2)] sm:p-12">
+        <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-[1.5rem] bg-emerald-50 text-emerald-800"><CheckCircle2 className="h-11 w-11" aria-hidden="true" /></span>
+        <p className="mt-7 text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Un paso más en tu recorrido</p>
+        <h1 ref={titleRef} tabIndex={-1} className="mt-2 text-3xl font-black tracking-tight text-stone-900 sm:text-4xl">
           Sesión completada
         </h1>
-        <p className="mt-3 text-slate-600">
+        <p className="mx-auto mt-3 max-w-md text-stone-600">
           Practicaste {completedCount} palabras y resolviste correctamente {correctCount} interacciones.
         </p>
-        <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+        {completedCount > 0 && <div className="mx-auto mt-8 max-w-[230px] rounded-2xl border border-emerald-100 bg-emerald-50 p-4"><p className="font-mono text-3xl font-bold tabular-nums text-emerald-900">{Math.round((correctCount / completedCount) * 100)}%</p><p className="text-xs font-bold uppercase tracking-wider text-emerald-800">de aciertos</p></div>}
+        <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <button
             type="button"
             onClick={() => void startSession()}
-            className="inline-flex min-h-touch items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 font-bold text-white hover:bg-emerald-700"
+            className="inline-flex min-h-touch items-center justify-center gap-2 rounded-xl bg-emerald-800 px-5 py-3 font-bold text-white transition-transform duration-200 hover:bg-emerald-900 active:scale-[0.98]"
           >
             <RotateCcw className="h-5 w-5" aria-hidden="true" />
             Practicar otra vez
           </button>
           <Link
             to="/"
-            className="inline-flex min-h-touch items-center justify-center rounded-xl border border-slate-300 px-5 py-3 font-bold text-slate-700 hover:bg-slate-50"
+            className="inline-flex min-h-touch items-center justify-center rounded-xl border border-stone-300 px-5 py-3 font-bold text-stone-800 transition-colors hover:bg-stone-50"
           >
             Volver al inicio
           </Link>
@@ -155,33 +177,34 @@ export function StudySessionPage() {
   }
 
   return (
-    <section className="mx-auto max-w-4xl space-y-6" aria-labelledby="study-title">
-      <header className="flex flex-wrap items-center justify-between gap-4">
+    <section className="mx-auto max-w-5xl space-y-7" aria-labelledby="study-title">
+      <header className="flex flex-wrap items-end justify-between gap-5 border-b border-stone-200 pb-6">
         <div>
-          <Link to="/" className="inline-flex min-h-touch items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900">
+          <Link to="/" className="inline-flex min-h-touch items-center gap-2 text-sm font-semibold text-stone-700 transition-colors hover:text-emerald-800">
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             Salir de la sesión
           </Link>
-          <h1 id="study-title" ref={titleRef} tabIndex={-1} className="mt-2 text-3xl font-black text-slate-900">
+          <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Sesión de estudio</p>
+          <h1 id="study-title" ref={titleRef} tabIndex={-1} className="mt-1 text-3xl font-black tracking-tight text-stone-900 sm:text-4xl">
             {categorySlug === 'technology' ? 'Tecnología cotidiana' : categorySlug === 'office' ? 'Objetos de oficina' : categorySlug === 'fruits' ? 'Frutas' : 'Sesión de vocabulario'}
           </h1>
         </div>
-        <div className="min-w-48">
-          <div className="mb-1 flex justify-between text-sm font-semibold text-slate-600">
+        <div className="w-full max-w-56">
+          <div className="mb-1 flex justify-between text-sm font-semibold text-stone-700">
             <span>Progreso</span>
-            <span>{Math.min(completedCount + 1, total)} de {total}</span>
+            <span className="font-mono tabular-nums">{Math.min(completedCount + 1, total)} de {total}</span>
           </div>
           <progress
             value={Math.min(completedCount, total)}
             max={total}
             aria-label={`${completedCount} de ${total} palabras completadas`}
-            className="h-2 w-full overflow-hidden rounded-full accent-emerald-600"
+            className="h-2 w-full overflow-hidden rounded-full accent-emerald-800"
           />
         </div>
       </header>
 
       {pageState === 'loading' && (
-        <div role="status" className="rounded-3xl border border-slate-200 bg-white p-10 text-center text-slate-600 shadow-sm">
+        <div role="status" className="rounded-3xl border border-stone-200 bg-white p-10 text-center text-stone-700 shadow-[0_1px_2px_rgba(28,25,23,0.04)]">
           Preparando la siguiente palabra…
         </div>
       )}
@@ -201,37 +224,38 @@ export function StudySessionPage() {
       )}
 
       {exercise && pageState !== 'loading' && pageState !== 'load-error' && (
-        <form onSubmit={handleSubmit} className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+        <form onSubmit={handleSubmit} className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_2px_4px_rgba(28,25,23,0.04),0_20px_55px_-28px_rgba(28,25,23,0.22)]">
           <div className="grid gap-0 md:grid-cols-[1.05fr_1fr]">
-            <div className="bg-slate-100 p-4 sm:p-6">
+            <div className="bg-[#f0eee8] p-3 sm:p-6 md:flex md:flex-col md:justify-between">
               <img
                 src={exercise.imageUrl}
                 alt={exercise.imageDescription}
-                className="aspect-square w-full rounded-2xl object-cover shadow-inner"
+                className="mx-auto aspect-[4/3] max-h-[260px] w-full rounded-2xl border border-stone-200 bg-white object-contain p-3 sm:max-h-[350px] md:aspect-square md:max-h-none"
               />
-              <div className="mt-4 flex justify-center">
+              <div className="mt-3 flex items-center justify-center gap-3 pb-1 md:mt-5">
                 <AudioPlayerButton
                   audioUrl={exercise.audioUrl}
                   label="Escuchar la pronunciación de la respuesta"
                 />
+                <span className="text-xs font-semibold text-stone-600">Escucha la palabra</span>
               </div>
             </div>
 
-            <div className="flex flex-col p-5 sm:p-8">
+            <div className="flex flex-col p-4 sm:p-8">
               <fieldset disabled={pageState === 'submitting' || pageState === 'answered'}>
-                <legend className="text-xl font-extrabold text-slate-900">{exercise.prompt}</legend>
-                <p className="mt-2 text-sm text-slate-500">Selecciona una opción. Los errores te ayudan a aprender y no tienen penalización.</p>
+                <legend className="text-xl font-extrabold leading-snug tracking-tight text-stone-900 sm:text-2xl">{exercise.prompt}</legend>
+                <p className="mt-2 text-sm leading-relaxed text-stone-600">Elige una opción. Puedes aprender de cada intento.</p>
 
-                <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                  {exercise.options.map((option) => {
+                <div className="mt-5 grid gap-2.5 sm:grid-cols-2 sm:gap-3">
+                  {exercise.options.map((option, index) => {
                     const isSelected = option.id === selectedOptionId;
                     return (
                       <label
                         key={option.id}
-                        className={`flex min-h-touch cursor-pointer items-center gap-3 rounded-xl border-2 px-4 py-3 font-bold transition-colors ${
+                        className={`flex min-h-[56px] cursor-pointer items-center gap-3 rounded-xl border-2 px-4 py-3 font-bold transition-all duration-150 active:scale-[0.99] ${
                           isSelected
-                            ? 'border-emerald-600 bg-emerald-50 text-emerald-950'
-                            : 'border-slate-200 bg-white text-slate-800 hover:border-slate-400'
+                            ? 'border-emerald-800 bg-emerald-50 text-emerald-950 shadow-[0_1px_2px_rgba(6,95,70,0.1)]'
+                            : 'border-stone-200 bg-white text-stone-800 hover:border-emerald-500 hover:bg-emerald-50/40'
                         }`}
                       >
                         <input
@@ -240,9 +264,11 @@ export function StudySessionPage() {
                           value={option.id}
                           checked={isSelected}
                           onChange={() => setSelectedOptionId(option.id)}
-                          className="h-5 w-5 accent-emerald-600"
+                          aria-keyshortcuts={`${index + 1}`}
+                          className="h-5 w-5 shrink-0 accent-emerald-800"
                         />
-                        <span lang="en">{option.label}</span>
+                        <span lang="en" className="min-w-0 break-words">{option.label}</span>
+                        <kbd aria-hidden="true" className="ml-auto hidden rounded border border-current/20 px-2 py-0.5 font-mono text-xs opacity-70 sm:inline">{index + 1}</kbd>
                       </label>
                     );
                   })}
@@ -269,10 +295,10 @@ export function StudySessionPage() {
                   role="status"
                   aria-live="polite"
                   className={`mt-6 rounded-2xl border p-4 ${
-                    result.correct ? 'border-emerald-300 bg-emerald-50' : 'border-amber-300 bg-amber-50'
+                    result.correct ? 'border-emerald-200 bg-emerald-50' : 'border-amber-300 bg-amber-50'
                   }`}
                 >
-                  <h2 ref={feedbackRef} tabIndex={-1} className="text-xl font-black text-slate-900">
+                  <h2 ref={feedbackRef} tabIndex={-1} className="text-xl font-black text-stone-900">
                     {result.correct ? '¡Muy bien! La descubriste.' : 'Todavía no. La veremos de nuevo.'}
                   </h2>
 
@@ -310,7 +336,7 @@ export function StudySessionPage() {
                   <button
                     type="submit"
                     disabled={!selectedOptionId || pageState === 'submitting'}
-                    className="inline-flex min-h-touch w-full items-center justify-center rounded-xl bg-emerald-600 px-5 py-3 font-bold text-white shadow-sm hover:bg-emerald-700 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-600"
+                    className="inline-flex min-h-[54px] w-full items-center justify-center rounded-xl bg-emerald-800 px-5 py-3 text-base font-bold text-white transition-transform duration-150 hover:bg-emerald-900 active:scale-[0.99] disabled:cursor-not-allowed disabled:bg-stone-200 disabled:text-stone-600"
                   >
                     {pageState === 'submitting' ? 'Comprobando…' : 'Comprobar respuesta'}
                   </button>
@@ -318,7 +344,7 @@ export function StudySessionPage() {
                   <button
                     type="button"
                     onClick={handleContinue}
-                    className="inline-flex min-h-touch w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 font-bold text-white hover:bg-slate-800"
+                    className="inline-flex min-h-[54px] w-full items-center justify-center gap-2 rounded-xl bg-stone-900 px-5 py-3 text-base font-bold text-white transition-transform duration-150 hover:bg-stone-800 active:scale-[0.99]"
                   >
                     {result?.correct ? 'Siguiente palabra' : 'Continuar y practicarla después'}
                     <ArrowRight className="h-5 w-5" aria-hidden="true" />
