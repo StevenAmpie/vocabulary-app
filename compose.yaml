@@ -1,0 +1,37 @@
+name: vocabulary-app
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: vocab_db
+      POSTGRES_USER: vocab_user
+      POSTGRES_PASSWORD: vocab_password
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - vocab_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vocab_user -d vocab_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - vocab_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: unless-stopped
+
+volumes:
+  vocab_postgres_data:
+  vocab_redis_data:

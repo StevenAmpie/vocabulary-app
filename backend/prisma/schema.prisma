@@ -1,0 +1,209 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum WordState {
+  DISCOVERED
+  CONSOLIDATING
+  MASTERED
+}
+
+enum EnglishLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+}
+
+model User {
+  id                      String              @id @default(uuid())
+  email                   String?             @unique
+  displayName             String              @map("display_name")
+  estimatedLevel          EnglishLevel?       @default(A1) @map("estimated_level")
+  hasCompletedDiagnostic  Boolean             @default(false) @map("has_completed_diagnostic")
+  timezone                String              @default("UTC")
+  createdAt               DateTime            @default(now()) @map("created_at")
+  updatedAt               DateTime            @updatedAt @map("updated_at")
+
+  passkeys                PasskeyCredential[]
+  wordProgress            UserWordProgress[]
+  streakLogs              UserStreakLog[]
+  achievements            UserAchievement[]
+  weeklyRecaps            WeeklyRecap[]
+  learningAttempts        LearningAttempt[]
+
+  @@map("users")
+}
+
+model PasskeyCredential {
+  credentialId String   @id @map("credential_id")
+  userId       String   @map("user_id")
+  publicKey    Bytes    @map("public_key")
+  counter      BigInt   @default(0)
+  deviceType   String?  @map("device_type")
+  backedUp     Boolean  @default(false) @map("backed_up")
+  transports   String[] @default([])
+  createdAt    DateTime @default(now()) @map("created_at")
+  lastUsedAt   DateTime @default(now()) @map("last_used_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("passkey_credentials")
+}
+
+model Category {
+  slug         String   @id
+  name         String
+  description  String?
+  iconUrl      String?  @map("icon_url")
+  displayOrder Int      @default(0) @map("display_order")
+  words        Word[]
+
+  @@map("categories")
+}
+
+model Word {
+  id              String         @id @default(uuid())
+  slug            String         @unique
+  termEn          String         @map("term_en")
+  translationEs   String         @map("translation_es")
+  phoneticIpa     String         @map("phonetic_ipa")
+  hint            String
+  imageDescription String        @map("image_description")
+  audioUrl        String         @map("audio_url")
+  imageUrl        String         @map("image_url")
+  categorySlug    String         @map("category_slug")
+  difficultyScore Int            @default(1) @map("difficulty_score")
+  createdAt       DateTime       @default(now()) @map("created_at")
+
+  category        Category       @relation(fields: [categorySlug], references: [slug])
+  sentences       SentenceWord[]
+  userProgress    UserWordProgress[]
+  learningAttempts LearningAttempt[]
+
+  @@index([categorySlug])
+  @@map("words")
+}
+
+model Sentence {
+  id            String         @id @default(uuid())
+  sentenceEn    String         @map("sentence_en")
+  translationEs String         @map("translation_es")
+  audioUrl      String?        @map("audio_url")
+  createdAt     DateTime       @default(now()) @map("created_at")
+
+  words         SentenceWord[]
+
+  @@map("sentences")
+}
+
+model SentenceWord {
+  sentenceId   String  @map("sentence_id")
+  wordId       String  @map("word_id")
+  isTargetWord Boolean @default(false) @map("is_target_word")
+
+  sentence Sentence @relation(fields: [sentenceId], references: [id], onDelete: Cascade)
+  word     Word     @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@id([sentenceId, wordId])
+  @@index([wordId])
+  @@map("sentence_words")
+}
+
+model UserWordProgress {
+  id                  String    @id @default(uuid())
+  userId              String    @map("user_id")
+  wordId              String    @map("word_id")
+  state               WordState @default(DISCOVERED)
+  directSuccessCount  Int       @default(0) @map("direct_success_count")
+  contextSuccessCount Int       @default(0) @map("context_success_count")
+  nextReviewAt        DateTime  @default(now()) @map("next_review_at")
+  lastPracticedAt     DateTime  @default(now()) @map("last_practiced_at")
+  discoveredAt        DateTime  @default(now()) @map("discovered_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word Word @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, wordId])
+  @@index([userId, nextReviewAt])
+  @@map("user_word_progress")
+}
+
+model UserStreakLog {
+  id                   String   @id @default(uuid())
+  userId               String   @map("user_id")
+  activityDate         DateTime @db.Date @map("activity_date")
+  wordsPracticedCount  Int      @default(0) @map("words_practiced_count")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, activityDate])
+  @@index([userId])
+  @@map("user_streak_logs")
+}
+
+model Achievement {
+  code         String            @id
+  title        String
+  description  String
+  badgeIconUrl String            @map("badge_icon_url")
+  users        UserAchievement[]
+
+  @@map("achievements")
+}
+
+model UserAchievement {
+  userId          String   @map("user_id")
+  achievementCode String   @map("achievement_code")
+  unlockedAt      DateTime @default(now()) @map("unlocked_at")
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievementCode], references: [code], onDelete: Cascade)
+
+  @@id([userId, achievementCode])
+  @@map("user_achievements")
+}
+
+model WeeklyRecap {
+  id          String   @id @default(uuid())
+  userId      String   @map("user_id")
+  weekStart   DateTime @db.Date @map("week_start")
+  weekEnd     DateTime @db.Date @map("week_end")
+  summaryData Json     @map("summary_data")
+  generatedAt DateTime @default(now()) @map("generated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, weekStart])
+  @@map("weekly_recaps")
+}
+
+model LearningAttempt {
+  id                String     @id @default(uuid())
+  clientAttemptId   String     @unique @map("client_attempt_id")
+  userId            String     @map("user_id")
+  sessionId         String     @map("session_id")
+  exerciseId        String     @map("exercise_id")
+  wordId            String     @map("word_id")
+  selectedOptionId  String     @map("selected_option_id")
+  isCorrect         Boolean    @map("is_correct")
+  responseTimeMs    Int        @map("response_time_ms")
+  previousState     WordState? @map("previous_state")
+  resultingState    WordState? @map("resulting_state")
+  resultPayload     Json       @map("result_payload")
+  attemptedAt       DateTime   @default(now()) @map("attempted_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word Word @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@index([userId, attemptedAt])
+  @@index([userId, wordId])
+  @@map("learning_attempts")
+}
