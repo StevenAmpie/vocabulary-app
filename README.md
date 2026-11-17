@@ -12,7 +12,7 @@ Monorepo de la aplicación de vocabulario visual: `frontend/` (React y Vite),
 ## Clonar y ejecutar en una VM Linux
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/StevenAmpie/vocabulary-app.git
 cd vocabulary-app
 docker compose up -d --wait
 
