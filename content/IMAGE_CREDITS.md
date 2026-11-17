@@ -1,0 +1,109 @@
+# Créditos de fotografías
+
+Fotografías descargadas de Wikimedia Commons. La licencia de cada archivo se indica en su página de origen.
+
+- **Run 1:** [Kristopher S. Wilson, U.S. Navy](https://commons.wikimedia.org/wiki/File:Woman_runs_through_mud.jpg) — Public domain.
+- **Run 2:** [Kishannageswaran](https://commons.wikimedia.org/wiki/File:Old_person_running_2015.jpeg) — CC BY-SA 4.0.
+- **Walk 1:** [AEira-WMF](https://commons.wikimedia.org/wiki/File:People_walking_on_the_street_in_Nairobi,_Kenya.jpg) — CC BY 4.0.
+- **Walk 2:** [Holt, Charles Clement, 1866-1925](https://commons.wikimedia.org/wiki/File:Mother_and_child_walking_down_the_sidewalk_on_an_unidentified_street.jpg) — Public domain.
+- **Jump 1:** [Øyvind Holmstad](https://commons.wikimedia.org/wiki/File:Trampoline_jump_king.JPG) — CC0.
+- **Jump 2:** [Leon Brooks](https://commons.wikimedia.org/wiki/File:Girls_silhouette_on_wall_child_is_bouncing_on_a_trampoline.jpg) — Public domain.
+- **Swim 1:** [Andrefs9](https://commons.wikimedia.org/wiki/File:Swimming_in_Arr%C3%A1bida_Natural_Park.jpg) — CC BY-SA 4.0.
+- **Swim 2:** [Gary Rogers](https://commons.wikimedia.org/wiki/File:Swimmer_in_Rydal_Water_-_geograph.org.uk_-_5749175.jpg) — CC BY-SA 2.0.
+- **Ride 1:** [Tanvir Rahat](https://commons.wikimedia.org/wiki/File:A_person_is_seen_riding_a_bicycle_in_Rajshahi_University.jpg) — CC BY-SA 4.0.
+- **Ride 2:** [WrS.tm.pl](https://commons.wikimedia.org/wiki/File:Micromobility_in_Warsaw._A_person_riding_a_bicycle_on_M%C5%82ynarska_Street.jpg) — Public domain.
+- **Drive 1:** [Mick Tinbergen tintels](https://commons.wikimedia.org/wiki/File:Old_woman_driving_blue_car_(Unsplash).jpg) — CC0.
+- **Drive 2:** [Unknown photographer](https://commons.wikimedia.org/wiki/File:Woman_smiles_while_driving.jpg) — Public domain.
+- **Fly 1:** [Matthew T Rader](https://commons.wikimedia.org/wiki/File:Bird_silhouette_flying_in_the_sky.jpg) — CC BY-SA 4.0.
+- **Fly 2:** [Gannu03](https://commons.wikimedia.org/wiki/File:Bird_flying,_Kerala.jpg) — CC BY-SA 4.0.
+- **Climb 1:** [The U.S. National Archives](https://commons.wikimedia.org/wiki/File:Mountain_climber_of_the_Midwest_Mountain_Climbing_team_(33421583241).jpg) — Public domain.
+- **Climb 2:** [TSgt Donald Hudson, USAF](https://commons.wikimedia.org/wiki/File:U.S._Army_SSgt_Earl_-_lead_mountaineer_-_secures_anchor_preparing_to_rappel_into_crevasse_during_Operation_Colony_Glacier_-_June_2023.jpg) — Public domain.
+- **Dance 1:** [Rama](https://commons.wikimedia.org/wiki/File:People_dancing-MAHG_011627-P6130471-gradient.jpg) — Public domain.
+- **Dance 2:** [Eneas](https://commons.wikimedia.org/wiki/File:People_Dancing_Thriller.jpg) — CC BY 2.0.
+- **Sing 1:** [Solomon203](https://commons.wikimedia.org/wiki/File:Asasobi_singing_Kaikai_Kitan_on_the_stage_20240714b.jpg) — CC BY-SA 4.0.
+- **Sing 2:** [Armigo](https://commons.wikimedia.org/wiki/File:Mans_Z_singing.jpg) — CC BY 3.0.
+- **Read 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Young_woman_reading_a_book_closeup.jpg) — CC BY 2.0.
+- **Read 2:** [Jules Verne Times Two](https://commons.wikimedia.org/wiki/File:Woman_reading_a_book_next_to_an_upside_down_bicycle,_Cais_do_Sodr%C3%A9,_Lisbon,_Portugal_julesvernex2.jpg) — CC BY-SA 4.0.
+- **Write 1:** [PxHere](https://commons.wikimedia.org/wiki/File:Notebook-writing-man-book-person-blur-1176206.jpg) — CC0.
+- **Write 2:** [Kristin Hardwick](https://commons.wikimedia.org/wiki/File:Woman_writing_on_a_notebook_with_a_pen.jpg) — CC0.
+- **Draw 1:** [Benoît Prieur](https://commons.wikimedia.org/wiki/File:A_cartoonist_drawing-Disney%27s_Hollywood_Studios_(May_2023).JPG) — CC0.
+- **Draw 2:** [Photograph taken by Debbie Cohen, PAAM 2009 intern and GromLs contributor.](https://commons.wikimedia.org/wiki/File:Aa_education_collins_drawing_class.JPG) — CC BY-SA 3.0.
+- **Paint 1:** [Sharon Farmer
+
+White House Photograph Office](https://commons.wikimedia.org/wiki/File:President_Bill_Clinton_paints_a_wall_with_a_roller_paint_brush_during_the_renovation_of_Cardozo_High_School_in_Washington,_DC.jpg) — Public domain.
+- **Paint 2:** [Euphoric Captures](https://commons.wikimedia.org/wiki/File:Pattachitra_artist_at_work_in_Odisha,_India.jpg) — CC BY-SA 4.0.
+- **Cook 1:** [Original:  Mithun Kunwar
+Derivative work:  Radomianin](https://commons.wikimedia.org/wiki/File:Grandmother_preparing_food_inside_traditional_kitchen_(edited).jpg) — CC BY-SA 4.0.
+- **Cook 2:** [U.S. Consumer Product Safety Commission](https://commons.wikimedia.org/wiki/File:Fire_Safety_-_A_person_who_uses_a_wheelchair_cooking_safely_in_their_kitchen.jpg) — Public domain.
+- **Bake 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Baking_a_dish_in_the_oven_while_taking_it_out_using_oven_mitts_in_a_cozy_kitchen.jpg) — CC BY 2.0.
+- **Bake 2:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Baker_woman%27s_hands_kneading_bread_dough.jpg) — CC BY 2.0.
+- **Eat 1:** [waketechcc](https://commons.wikimedia.org/wiki/File:People_eating_food_from_a_cookout.jpg) — CC0.
+- **Eat 2:** [BaduFerreira](https://commons.wikimedia.org/wiki/File:Man_eating_Mission_burrito_at_El_Farolito.jpg) — CC0.
+- **Drink 1:** [Debske](https://commons.wikimedia.org/wiki/File:Boy_drinking_water_in_house.jpg) — CC0.
+- **Drink 2:** [Kristiaan from Haarlem, The Netherlands](https://commons.wikimedia.org/wiki/File:Woman_drinking_water.jpg) — CC BY 2.0.
+- **Sleep 1:** [Basile Morin](https://commons.wikimedia.org/wiki/File:Mother_and_newborn_sleeping_on_a_bamboo_bed_near_a_campfire_in_a_house_in_Don_Det_Laos.jpg) — CC BY-SA 4.0.
+- **Sleep 2:** [rachel CALAMUSA at the Wayback Machine](https://commons.wikimedia.org/wiki/File:Sleeping-girl.jpg) — CC BY-SA 2.0.
+- **Hold 1:** [Aathavan jaffna](https://commons.wikimedia.org/wiki/File:A_person_holding_basket_ball_in_his_hand.JPG) — CC BY-SA 3.0.
+- **Hold 2:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Close-up_of_a_person_holding_3_apples_on_top_of_eachother.jpg) — CC BY 2.0.
+- **Sit 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Person_sitting_in_a_chair_with_back_pain.jpg) — CC BY 2.0.
+- **Sit 2:** [Photograph by PictureYouth
+Derivative by Keraunoscopia](https://commons.wikimedia.org/wiki/File:Girl_Sitting_in_Chair_(tone).jpg) — CC BY-SA 3.0.
+- **Stand 1:** [Doug Birnbaum](https://commons.wikimedia.org/wiki/File:Nate_Soares_standing_outdoors,_2025.jpg) — CC0.
+- **Stand 2:** [BLMUtah](https://commons.wikimedia.org/wiki/File:Person_standing_on_top_of_canyon_wall_overlooking_river_(37479945821).jpg) — Public domain.
+- **Laugh 1:** [Basile Morin](https://commons.wikimedia.org/wiki/File:Laughing_boy_at_golden_hour.jpg) — CC BY-SA 4.0.
+- **Laugh 2:** [Basile Morin](https://commons.wikimedia.org/wiki/File:Laughing_woman.jpg) — CC BY-SA 4.0.
+- **Smile 1:** [Wilfredor](https://commons.wikimedia.org/wiki/File:Fishmonger_smiling,_Maracaibo_street_market,_Venezuela.jpg) — CC0.
+- **Smile 2:** [Original:  Arpan.basuchowdhury
+Derivative work:  Aristeas](https://commons.wikimedia.org/wiki/File:A_smiling_member_of_the_Ramnami_Samaj_(edited).jpg) — CC BY-SA 4.0.
+- **Cry 1:** [Taremu](https://commons.wikimedia.org/wiki/File:Hilda_Dokubo_crying_1.jpg) — CC BY-SA 3.0.
+- **Cry 2:** [Office for Emergency Management. Office of War Information. Overseas Operations Branch. New York Office. News and Features Bureau. (12/17/1942 - 09/15/1945)](https://commons.wikimedia.org/wiki/File:Weeping_Parisian_from_NARA_Ww2-81.jpg) — Public domain.
+- **Talk 1:** [Vyacheslav Argenberg](https://commons.wikimedia.org/wiki/File:Petra,_People_in_conversation,_Jordan.jpg) — CC BY 4.0.
+- **Talk 2:** [Amirhayat012](https://commons.wikimedia.org/wiki/File:People_having_conversation_in_happy_mood.jpg) — CC BY-SA 4.0.
+- **Listen 1:** [Bruce Mars](https://commons.wikimedia.org/wiki/File:Girl_in_headphones.jpg) — CC0.
+- **Listen 2:** [Vu Hoang](https://commons.wikimedia.org/wiki/File:Woman_listening_to_music_with_wireless_headphones_neon_light_(50810419882).jpg) — CC BY 2.0.
+- **Watch 1:** [Evert F. Baumgardner](https://commons.wikimedia.org/wiki/File:Family_watching_television_1958.jpg) — Public domain.
+- **Watch 2:** [Peachyeung316](https://commons.wikimedia.org/wiki/File:Crowd_people_are_watching_television_at_Tuen_Mun.jpg) — CC BY-SA 4.0.
+- **Look 1:** [Jules Verne Times Two](https://commons.wikimedia.org/wiki/File:Gabriel_looking_through_pretend_binoculars_at_a_playground,_Parque_das_Na%C3%A7%C3%B5es,_Lisbon,_Portugal_julesvernex2.jpg) — CC BY-SA 4.0.
+- **Look 2:** [ShenandoahNPS](https://commons.wikimedia.org/wiki/File:Girl_Looking_Through_Binoculars_(51842300811).jpg) — Public domain.
+- **Point 1:** [Hillebrand Steve, U.S. Fish and Wildlife Service](https://commons.wikimedia.org/wiki/File:Man_pointing_with_his_finger.jpg) — Public domain.
+- **Point 2:** [Seattle Parks](https://commons.wikimedia.org/wiki/File:Woman_pointing_(16775293481).jpg) — CC BY 2.0.
+- **Throw 1:** [Onwuka Glory](https://commons.wikimedia.org/wiki/File:Throwing_ball_exercise.jpg) — CC0.
+- **Throw 2:** [Airman 1st Class Monica Roybal](https://commons.wikimedia.org/wiki/File:Ballistic_training_medicine_ball_throw.jpg) — CC0.
+- **Catch 1:** [chuttersnap chuttersnap](https://commons.wikimedia.org/wiki/File:Catching_the_ball_(Unsplash).jpg) — CC0.
+- **Catch 2:** [david clarke davidclarke](https://commons.wikimedia.org/wiki/File:Silhouette_goalkeeper_catching_the_ball_(Unsplash).jpg) — CC0.
+- **Kick 1:** [Deb Haaland](https://commons.wikimedia.org/wiki/File:Deb_Haaland_kicking_a_soccer_ball.jpg) — Public domain.
+- **Kick 2:** [ADKPhoto](https://commons.wikimedia.org/wiki/File:Boy_Kicking_Soccer_Ball_at_Adirondack_Camp_in_NY.jpg) — CC0.
+- **Hit 1:** [Tech. Sgt. Bryan G. Stevens](https://commons.wikimedia.org/wiki/File:Stacey_Brinson_hits_the_ball_with_her_racket_as_she_prepares_to_take_part_in_the_tennis_competition_during_the_Special_Olympics_at_Coonskin_Park_in_Charleston,_W.Va.,_June_4,_2011_110604-F-NH898-009.jpg) — Public domain.
+- **Hit 2:** [Sam13314553](https://commons.wikimedia.org/wiki/File:Samuele_Bruno_Hitting.webp) — CC BY-SA 4.0.
+- **Push 1:** [Syced](https://commons.wikimedia.org/wiki/File:Person_collecting_recyclables,_pushing_a_cart_on_the_road_in_Ebisu.jpg) — CC0.
+- **Push 2:** [Frank John Aleksandrowicz](https://commons.wikimedia.org/wiki/File:AMISH_HOUSEWIFE_PUSHES_SHOPPING_CART_OF_GROCERIES_TO_HER_PARKED_HORSE_AND_BUGGY_-_NARA_-_550094.jpg) — Public domain.
+- **Pull 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Person_pulling_rope_at_an_event_in_a_busy_indoor_space.jpg) — CC BY 2.0.
+- **Pull 2:** [Samson Ssemakadde](https://commons.wikimedia.org/wiki/File:Men_pulling_a_rope_during_a_tug_of_war_game.jpg) — CC0.
+- **Open 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:A_person_is_opening_a_door_to_enter_a_room_with_soft_lighting_and_wooden_floor_at_home.jpg) — CC BY 2.0.
+- **Open 2:** [Jack de Nijs for Anefo](https://commons.wikimedia.org/wiki/File:Opening_Nederlandse_Bank_door_koningin_Juliana,_Bestanddeelnr_921-3278.jpg) — CC0.
+- **Play 1:** [Husseingallery](https://commons.wikimedia.org/wiki/File:A_group_of_young_people_playing_ball,_Ismailia,_Egypt.jpg) — CC BY-SA 4.0.
+- **Play 2:** [Baxito](https://commons.wikimedia.org/wiki/File:People_Playing_football.jpg) — CC BY-SA 4.0.
+- **Wash 1:** [Bijay Chaurasia](https://commons.wikimedia.org/wiki/File:A_Man_Washing_His_Hands_Using_a_Hand_Pump-070A6382.jpg) — CC BY-SA 4.0.
+- **Wash 2:** [Beat Ruest](https://commons.wikimedia.org/wiki/File:Washing_hands_with_soap_(1).jpg) — CC BY-SA 4.0.
+- **Clean 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Person_cleaning_a_wooden_countertop_in_a_bright_room_using_orange_cleaning_spray_and_wearing_rubber_gloves.jpg) — CC BY 2.0.
+- **Clean 2:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Person_cleaning_living_room_floor_with_vacuum_cleaner_in_modern_home.jpg) — CC BY 2.0.
+- **Brush 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Person_brushes_teeth_while_wearing_eye_patches_in_a_bathroom_setting.jpg) — CC BY 2.0.
+- **Brush 2:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Person_brushes_teeth_in_bathroom.jpg) — CC BY 2.0.
+- **Cut 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Man_chopping_vegetables_in_a_cozy_kitchen_cabin_surrounded_by_friends_cooking_together.jpg) — CC BY 2.0.
+- **Cut 2:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Chef_prepares_fresh_ingredients_by_chopping_red_vegetables.jpg) — CC BY 2.0.
+- **Build 1:** [PatInver](https://commons.wikimedia.org/wiki/File:House_Construction_Labour_Workers_2_-_Invermere,_British_Columbia.jpg) — CC BY-SA 4.0.
+- **Build 2:** [PatInver](https://commons.wikimedia.org/wiki/File:House_Construction_Labour_Workers_3_-_Invermere,_British_Columbia.jpg) — CC BY-SA 4.0.
+- **Fix 1:** [Shixart1985](https://commons.wikimedia.org/wiki/File:Car_mechanic_fixing_a_damaged_part_of_a_car.jpg) — CC BY 2.0.
+- **Fix 2:** [Johnnybam](https://commons.wikimedia.org/wiki/File:Roadside_Car_Repair_Mechanic_at_Work.jpg) — CC BY-SA 4.0.
+- **Carry 1:** [Wilfredor](https://commons.wikimedia.org/wiki/File:Man_carrying_boxes_on_a_bicycle.jpg) — CC0.
+- **Carry 2:** [John Vachon](https://commons.wikimedia.org/wiki/File:Girl_carrying_her_father%27s_lunch_pail,_Omaha_10439u.jpg) — Public domain.
+- **Lift 1:** [Nassmart1](https://commons.wikimedia.org/wiki/File:Lifting_weight.jpg) — CC0.
+- **Lift 2:** [Sgt. David McLean](https://commons.wikimedia.org/wiki/File:Lifting_weights_DVIDS206128.jpg) — Public domain.
+- **Buy 1:** [Nicolas Vigier](https://commons.wikimedia.org/wiki/File:Buying_groceries_in_Mumbai_(1109).jpg) — CC0.
+- **Buy 2:** [Jules Verne Times Two](https://commons.wikimedia.org/wiki/File:Woman_buying_groceries_during_the_COVID-19_lockdown,_Mercado_de_Arroios,_Lisbon,_Portugal_julesvernex2.jpg) — CC BY-SA 4.0.
+- **Sell 1:** [Wilfredor](https://commons.wikimedia.org/wiki/File:Child_working_selling_vegetables_in_downtown_Maracaibo.jpg) — CC0.
+- **Sell 2:** [Alice S. Kandell](https://commons.wikimedia.org/wiki/File:Selling_rice_on_Gangtok_market,_Sikkim,_30135u.jpg) — Public domain.
+- **Teach 1:** [Harrison Keely](https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_12.jpg) — CC BY 4.0.
+- **Teach 2:** [Harrison Keely](https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_08.jpg) — CC BY 4.0.
+- **Learn 1:** [Ellamaria elshmod](https://commons.wikimedia.org/wiki/File:University_students_in_a_technology_learning_classroom.jpg) — CC BY-SA 4.0.
+- **Learn 2:** [Christian Yakubu](https://commons.wikimedia.org/wiki/File:Students_learning_in_a_classroom_12234.jpg) — CC BY-SA 4.0.

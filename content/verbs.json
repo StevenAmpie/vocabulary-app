@@ -1,0 +1,1252 @@
+[
+  {
+    "slug": "run",
+    "termEn": "Run",
+    "translationEs": "correr",
+    "phoneticIpa": "/rʌn/",
+    "hint": "Observa la acción y piensa en el verbo que significa «correr».",
+    "imageDescription": "Fotografía que representa la acción de correr.",
+    "exampleEn": "She runs in the park.",
+    "exampleEs": "Ella corre en el parque.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_runs_through_mud.jpg",
+        "creator": "Kristopher S. Wilson, U.S. Navy",
+        "license": "Public domain",
+        "src": "/media/verbs/run/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Old_person_running_2015.jpeg",
+        "creator": "Kishannageswaran",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/run/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/run/audio.wav"
+  },
+  {
+    "slug": "walk",
+    "termEn": "Walk",
+    "translationEs": "caminar",
+    "phoneticIpa": "/wɔːk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «caminar».",
+    "imageDescription": "Fotografía que representa la acción de caminar.",
+    "exampleEn": "We walk to school.",
+    "exampleEs": "Caminamos a la escuela.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:People_walking_on_the_street_in_Nairobi,_Kenya.jpg",
+        "creator": "AEira-WMF",
+        "license": "CC BY 4.0",
+        "src": "/media/verbs/walk/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Mother_and_child_walking_down_the_sidewalk_on_an_unidentified_street.jpg",
+        "creator": "Holt, Charles Clement, 1866-1925",
+        "license": "Public domain",
+        "src": "/media/verbs/walk/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/walk/audio.wav"
+  },
+  {
+    "slug": "jump",
+    "termEn": "Jump",
+    "translationEs": "saltar",
+    "phoneticIpa": "/dʒʌmp/",
+    "hint": "Observa la acción y piensa en el verbo que significa «saltar».",
+    "imageDescription": "Fotografía que representa la acción de saltar.",
+    "exampleEn": "The child jumps high.",
+    "exampleEs": "El niño salta alto.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Trampoline_jump_king.JPG",
+        "creator": "Øyvind Holmstad",
+        "license": "CC0",
+        "src": "/media/verbs/jump/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Girls_silhouette_on_wall_child_is_bouncing_on_a_trampoline.jpg",
+        "creator": "Leon Brooks",
+        "license": "Public domain",
+        "src": "/media/verbs/jump/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/jump/audio.wav"
+  },
+  {
+    "slug": "swim",
+    "termEn": "Swim",
+    "translationEs": "nadar",
+    "phoneticIpa": "/swɪm/",
+    "hint": "Observa la acción y piensa en el verbo que significa «nadar».",
+    "imageDescription": "Fotografía que representa la acción de nadar.",
+    "exampleEn": "I swim every weekend.",
+    "exampleEs": "Nado cada fin de semana.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Swimming_in_Arr%C3%A1bida_Natural_Park.jpg",
+        "creator": "Andrefs9",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/swim/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Swimmer_in_Rydal_Water_-_geograph.org.uk_-_5749175.jpg",
+        "creator": "Gary Rogers",
+        "license": "CC BY-SA 2.0",
+        "src": "/media/verbs/swim/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/swim/audio.wav"
+  },
+  {
+    "slug": "ride",
+    "termEn": "Ride",
+    "translationEs": "montar",
+    "phoneticIpa": "/raɪd/",
+    "hint": "Observa la acción y piensa en el verbo que significa «montar».",
+    "imageDescription": "Fotografía que representa la acción de montar.",
+    "exampleEn": "He rides a bicycle.",
+    "exampleEs": "Él monta una bicicleta.",
+    "images": [
+      {
+        "src": "/media/verbs/ride/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_person_is_seen_riding_a_bicycle_in_Rajshahi_University.jpg",
+        "creator": "Tanvir Rahat",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/ride/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Micromobility_in_Warsaw._A_person_riding_a_bicycle_on_M%C5%82ynarska_Street.jpg",
+        "creator": "WrS.tm.pl",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/ride/audio.wav"
+  },
+  {
+    "slug": "drive",
+    "termEn": "Drive",
+    "translationEs": "conducir",
+    "phoneticIpa": "/draɪv/",
+    "hint": "Observa la acción y piensa en el verbo que significa «conducir».",
+    "imageDescription": "Fotografía que representa la acción de conducir.",
+    "exampleEn": "She drives to work.",
+    "exampleEs": "Ella conduce al trabajo.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Old_woman_driving_blue_car_(Unsplash).jpg",
+        "creator": "Mick Tinbergen tintels",
+        "license": "CC0",
+        "src": "/media/verbs/drive/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_smiles_while_driving.jpg",
+        "creator": "Unknown photographer",
+        "license": "Public domain",
+        "src": "/media/verbs/drive/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/drive/audio.wav"
+  },
+  {
+    "slug": "fly",
+    "termEn": "Fly",
+    "translationEs": "volar",
+    "phoneticIpa": "/flaɪ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «volar».",
+    "imageDescription": "Fotografía que representa la acción de volar.",
+    "exampleEn": "The bird flies above us.",
+    "exampleEs": "El pájaro vuela sobre nosotros.",
+    "images": [
+      {
+        "src": "/media/verbs/fly/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Bird_silhouette_flying_in_the_sky.jpg",
+        "creator": "Matthew T Rader",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/fly/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Bird_flying,_Kerala.jpg",
+        "creator": "Gannu03",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/fly/audio.wav"
+  },
+  {
+    "slug": "climb",
+    "termEn": "Climb",
+    "translationEs": "escalar",
+    "phoneticIpa": "/klaɪm/",
+    "hint": "Observa la acción y piensa en el verbo que significa «escalar».",
+    "imageDescription": "Fotografía que representa la acción de escalar.",
+    "exampleEn": "They climb the mountain.",
+    "exampleEs": "Ellos escalan la montaña.",
+    "images": [
+      {
+        "src": "/media/verbs/climb/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Mountain_climber_of_the_Midwest_Mountain_Climbing_team_(33421583241).jpg",
+        "creator": "The U.S. National Archives",
+        "license": "Public domain"
+      },
+      {
+        "src": "/media/verbs/climb/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:U.S._Army_SSgt_Earl_-_lead_mountaineer_-_secures_anchor_preparing_to_rappel_into_crevasse_during_Operation_Colony_Glacier_-_June_2023.jpg",
+        "creator": "TSgt Donald Hudson, USAF",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/climb/audio.wav"
+  },
+  {
+    "slug": "dance",
+    "termEn": "Dance",
+    "translationEs": "bailar",
+    "phoneticIpa": "/dæns/",
+    "hint": "Observa la acción y piensa en el verbo que significa «bailar».",
+    "imageDescription": "Fotografía que representa la acción de bailar.",
+    "exampleEn": "We dance together.",
+    "exampleEs": "Bailamos juntos.",
+    "images": [
+      {
+        "src": "/media/verbs/dance/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:People_dancing-MAHG_011627-P6130471-gradient.jpg",
+        "creator": "Rama",
+        "license": "Public domain"
+      },
+      {
+        "src": "/media/verbs/dance/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:People_Dancing_Thriller.jpg",
+        "creator": "Eneas",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/dance/audio.wav"
+  },
+  {
+    "slug": "sing",
+    "termEn": "Sing",
+    "translationEs": "cantar",
+    "phoneticIpa": "/sɪŋ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «cantar».",
+    "imageDescription": "Fotografía que representa la acción de cantar.",
+    "exampleEn": "She sings beautifully.",
+    "exampleEs": "Ella canta de forma hermosa.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Asasobi_singing_Kaikai_Kitan_on_the_stage_20240714b.jpg",
+        "creator": "Solomon203",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/sing/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Mans_Z_singing.jpg",
+        "creator": "Armigo",
+        "license": "CC BY 3.0",
+        "src": "/media/verbs/sing/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/sing/audio.wav"
+  },
+  {
+    "slug": "read",
+    "termEn": "Read",
+    "translationEs": "leer",
+    "phoneticIpa": "/riːd/",
+    "hint": "Observa la acción y piensa en el verbo que significa «leer».",
+    "imageDescription": "Fotografía que representa la acción de leer.",
+    "exampleEn": "I read a book at night.",
+    "exampleEs": "Leo un libro por la noche.",
+    "images": [
+      {
+        "src": "/media/verbs/read/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Young_woman_reading_a_book_closeup.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0"
+      },
+      {
+        "src": "/media/verbs/read/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_reading_a_book_next_to_an_upside_down_bicycle,_Cais_do_Sodr%C3%A9,_Lisbon,_Portugal_julesvernex2.jpg",
+        "creator": "Jules Verne Times Two",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/read/audio.wav"
+  },
+  {
+    "slug": "write",
+    "termEn": "Write",
+    "translationEs": "escribir",
+    "phoneticIpa": "/raɪt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «escribir».",
+    "imageDescription": "Fotografía que representa la acción de escribir.",
+    "exampleEn": "He writes a letter.",
+    "exampleEs": "Él escribe una carta.",
+    "images": [
+      {
+        "src": "/media/verbs/write/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Notebook-writing-man-book-person-blur-1176206.jpg",
+        "creator": "PxHere",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/write/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_writing_on_a_notebook_with_a_pen.jpg",
+        "creator": "Kristin Hardwick",
+        "license": "CC0"
+      }
+    ],
+    "audioUrl": "/media/verbs/write/audio.wav"
+  },
+  {
+    "slug": "draw",
+    "termEn": "Draw",
+    "translationEs": "dibujar",
+    "phoneticIpa": "/drɔː/",
+    "hint": "Observa la acción y piensa en el verbo que significa «dibujar».",
+    "imageDescription": "Fotografía que representa la acción de dibujar.",
+    "exampleEn": "She draws a picture.",
+    "exampleEs": "Ella dibuja una imagen.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_cartoonist_drawing-Disney%27s_Hollywood_Studios_(May_2023).JPG",
+        "creator": "Benoît Prieur",
+        "license": "CC0",
+        "src": "/media/verbs/draw/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Aa_education_collins_drawing_class.JPG",
+        "creator": "Photograph taken by Debbie Cohen, PAAM 2009 intern and GromLs contributor.",
+        "license": "CC BY-SA 3.0",
+        "src": "/media/verbs/draw/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/draw/audio.wav"
+  },
+  {
+    "slug": "paint",
+    "termEn": "Paint",
+    "translationEs": "pintar",
+    "phoneticIpa": "/peɪnt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «pintar».",
+    "imageDescription": "Fotografía que representa la acción de pintar.",
+    "exampleEn": "They paint a landscape.",
+    "exampleEs": "Ellos pintan un paisaje.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:President_Bill_Clinton_paints_a_wall_with_a_roller_paint_brush_during_the_renovation_of_Cardozo_High_School_in_Washington,_DC.jpg",
+        "creator": "Sharon Farmer\n\nWhite House Photograph Office",
+        "license": "Public domain",
+        "src": "/media/verbs/paint/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Pattachitra_artist_at_work_in_Odisha,_India.jpg",
+        "creator": "Euphoric Captures",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/paint/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/paint/audio.wav"
+  },
+  {
+    "slug": "cook",
+    "termEn": "Cook",
+    "translationEs": "cocinar",
+    "phoneticIpa": "/kʊk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «cocinar».",
+    "imageDescription": "Fotografía que representa la acción de cocinar.",
+    "exampleEn": "I cook dinner.",
+    "exampleEs": "Cocino la cena.",
+    "images": [
+      {
+        "src": "/media/verbs/cook/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Grandmother_preparing_food_inside_traditional_kitchen_(edited).jpg",
+        "creator": "Original:  Mithun Kunwar\nDerivative work:  Radomianin",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/cook/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Fire_Safety_-_A_person_who_uses_a_wheelchair_cooking_safely_in_their_kitchen.jpg",
+        "creator": "U.S. Consumer Product Safety Commission",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/cook/audio.wav"
+  },
+  {
+    "slug": "bake",
+    "termEn": "Bake",
+    "translationEs": "hornear",
+    "phoneticIpa": "/beɪk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «hornear».",
+    "imageDescription": "Fotografía que representa la acción de hornear.",
+    "exampleEn": "She bakes fresh bread.",
+    "exampleEs": "Ella hornea pan fresco.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Baking_a_dish_in_the_oven_while_taking_it_out_using_oven_mitts_in_a_cozy_kitchen.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/bake/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Baker_woman%27s_hands_kneading_bread_dough.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/bake/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/bake/audio.wav"
+  },
+  {
+    "slug": "eat",
+    "termEn": "Eat",
+    "translationEs": "comer",
+    "phoneticIpa": "/iːt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «comer».",
+    "imageDescription": "Fotografía que representa la acción de comer.",
+    "exampleEn": "We eat lunch together.",
+    "exampleEs": "Almorzamos juntos.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:People_eating_food_from_a_cookout.jpg",
+        "creator": "waketechcc",
+        "license": "CC0",
+        "src": "/media/verbs/eat/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Man_eating_Mission_burrito_at_El_Farolito.jpg",
+        "creator": "BaduFerreira",
+        "license": "CC0",
+        "src": "/media/verbs/eat/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/eat/audio.wav"
+  },
+  {
+    "slug": "drink",
+    "termEn": "Drink",
+    "translationEs": "beber",
+    "phoneticIpa": "/drɪŋk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «beber».",
+    "imageDescription": "Fotografía que representa la acción de beber.",
+    "exampleEn": "He drinks water.",
+    "exampleEs": "Él bebe agua.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Boy_drinking_water_in_house.jpg",
+        "creator": "Debske",
+        "license": "CC0",
+        "src": "/media/verbs/drink/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_drinking_water.jpg",
+        "creator": "Kristiaan from Haarlem, The Netherlands",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/drink/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/drink/audio.wav"
+  },
+  {
+    "slug": "sleep",
+    "termEn": "Sleep",
+    "translationEs": "dormir",
+    "phoneticIpa": "/sliːp/",
+    "hint": "Observa la acción y piensa en el verbo que significa «dormir».",
+    "imageDescription": "Fotografía que representa la acción de dormir.",
+    "exampleEn": "The baby sleeps well.",
+    "exampleEs": "El bebé duerme bien.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Mother_and_newborn_sleeping_on_a_bamboo_bed_near_a_campfire_in_a_house_in_Don_Det_Laos.jpg",
+        "creator": "Basile Morin",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/sleep/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Sleeping-girl.jpg",
+        "creator": "rachel CALAMUSA at the Wayback Machine",
+        "license": "CC BY-SA 2.0",
+        "src": "/media/verbs/sleep/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/sleep/audio.wav"
+  },
+  {
+    "slug": "hold",
+    "termEn": "Hold",
+    "translationEs": "sostener",
+    "phoneticIpa": "/hoʊld/",
+    "hint": "Observa qué hace alguien con un objeto entre las manos.",
+    "imageDescription": "Fotografía de alguien que sostiene un objeto.",
+    "exampleEn": "She holds the ball.",
+    "exampleEs": "Ella sostiene la pelota.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_person_holding_basket_ball_in_his_hand.JPG",
+        "creator": "Aathavan jaffna",
+        "license": "CC BY-SA 3.0",
+        "src": "/media/verbs/hold/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_person_holding_3_apples_on_top_of_eachother.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/hold/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/hold/audio.wav"
+  },
+  {
+    "slug": "sit",
+    "termEn": "Sit",
+    "translationEs": "sentarse",
+    "phoneticIpa": "/sɪt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «sentarse».",
+    "imageDescription": "Fotografía que representa la acción de sentarse.",
+    "exampleEn": "Please sit here.",
+    "exampleEs": "Por favor, siéntate aquí.",
+    "images": [
+      {
+        "src": "/media/verbs/sit/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_sitting_in_a_chair_with_back_pain.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0"
+      },
+      {
+        "src": "/media/verbs/sit/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Girl_Sitting_in_Chair_(tone).jpg",
+        "creator": "Photograph by PictureYouth\nDerivative by Keraunoscopia",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/sit/audio.wav"
+  },
+  {
+    "slug": "stand",
+    "termEn": "Stand",
+    "translationEs": "estar de pie",
+    "phoneticIpa": "/stænd/",
+    "hint": "Observa la acción y piensa en el verbo que significa «estar de pie».",
+    "imageDescription": "Fotografía que representa la acción de estar de pie.",
+    "exampleEn": "They stand in line.",
+    "exampleEs": "Ellos están de pie en la fila.",
+    "images": [
+      {
+        "src": "/media/verbs/stand/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Nate_Soares_standing_outdoors,_2025.jpg",
+        "creator": "Doug Birnbaum",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/stand/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_standing_on_top_of_canyon_wall_overlooking_river_(37479945821).jpg",
+        "creator": "BLMUtah",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/stand/audio.wav"
+  },
+  {
+    "slug": "laugh",
+    "termEn": "Laugh",
+    "translationEs": "reír",
+    "phoneticIpa": "/læf/",
+    "hint": "Observa la acción y piensa en el verbo que significa «reír».",
+    "imageDescription": "Fotografía que representa la acción de reír.",
+    "exampleEn": "The friends laugh together.",
+    "exampleEs": "Los amigos ríen juntos.",
+    "images": [
+      {
+        "src": "/media/verbs/laugh/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Laughing_boy_at_golden_hour.jpg",
+        "creator": "Basile Morin",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/laugh/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Laughing_woman.jpg",
+        "creator": "Basile Morin",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/laugh/audio.wav"
+  },
+  {
+    "slug": "smile",
+    "termEn": "Smile",
+    "translationEs": "sonreír",
+    "phoneticIpa": "/smaɪl/",
+    "hint": "Observa la acción y piensa en el verbo que significa «sonreír».",
+    "imageDescription": "Fotografía que representa la acción de sonreír.",
+    "exampleEn": "She smiles at the camera.",
+    "exampleEs": "Ella sonríe a la cámara.",
+    "images": [
+      {
+        "src": "/media/verbs/smile/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Fishmonger_smiling,_Maracaibo_street_market,_Venezuela.jpg",
+        "creator": "Wilfredor",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/smile/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_smiling_member_of_the_Ramnami_Samaj_(edited).jpg",
+        "creator": "Original:  Arpan.basuchowdhury\nDerivative work:  Aristeas",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/smile/audio.wav"
+  },
+  {
+    "slug": "cry",
+    "termEn": "Cry",
+    "translationEs": "llorar",
+    "phoneticIpa": "/kraɪ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «llorar».",
+    "imageDescription": "Fotografía que representa la acción de llorar.",
+    "exampleEn": "The child cries softly.",
+    "exampleEs": "El niño llora suavemente.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Hilda_Dokubo_crying_1.jpg",
+        "creator": "Taremu",
+        "license": "CC BY-SA 3.0",
+        "src": "/media/verbs/cry/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Weeping_Parisian_from_NARA_Ww2-81.jpg",
+        "creator": "Office for Emergency Management. Office of War Information. Overseas Operations Branch. New York Office. News and Features Bureau. (12/17/1942 - 09/15/1945)",
+        "license": "Public domain",
+        "src": "/media/verbs/cry/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/cry/audio.wav"
+  },
+  {
+    "slug": "talk",
+    "termEn": "Talk",
+    "translationEs": "hablar",
+    "phoneticIpa": "/tɔːk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «hablar».",
+    "imageDescription": "Fotografía que representa la acción de hablar.",
+    "exampleEn": "We talk after class.",
+    "exampleEs": "Hablamos después de clase.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Petra,_People_in_conversation,_Jordan.jpg",
+        "creator": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "src": "/media/verbs/talk/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:People_having_conversation_in_happy_mood.jpg",
+        "creator": "Amirhayat012",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/talk/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/talk/audio.wav"
+  },
+  {
+    "slug": "listen",
+    "termEn": "Listen",
+    "translationEs": "escuchar",
+    "phoneticIpa": "/ˈlɪsən/",
+    "hint": "Observa la acción y piensa en el verbo que significa «escuchar».",
+    "imageDescription": "Fotografía que representa la acción de escuchar.",
+    "exampleEn": "He listens to music.",
+    "exampleEs": "Él escucha música.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Girl_in_headphones.jpg",
+        "creator": "Bruce Mars",
+        "license": "CC0",
+        "src": "/media/verbs/listen/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_listening_to_music_with_wireless_headphones_neon_light_(50810419882).jpg",
+        "creator": "Vu Hoang",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/listen/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/listen/audio.wav"
+  },
+  {
+    "slug": "watch",
+    "termEn": "Watch",
+    "translationEs": "mirar",
+    "phoneticIpa": "/wɑːtʃ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «mirar».",
+    "imageDescription": "Fotografía que representa la acción de mirar.",
+    "exampleEn": "They watch a movie.",
+    "exampleEs": "Ellos miran una película.",
+    "images": [
+      {
+        "src": "/media/verbs/watch/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Family_watching_television_1958.jpg",
+        "creator": "Evert F. Baumgardner",
+        "license": "Public domain"
+      },
+      {
+        "src": "/media/verbs/watch/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Crowd_people_are_watching_television_at_Tuen_Mun.jpg",
+        "creator": "Peachyeung316",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/watch/audio.wav"
+  },
+  {
+    "slug": "look",
+    "termEn": "Look",
+    "translationEs": "observar",
+    "phoneticIpa": "/lʊk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «observar».",
+    "imageDescription": "Fotografía que representa la acción de observar.",
+    "exampleEn": "Look at the sky.",
+    "exampleEs": "Mira el cielo.",
+    "images": [
+      {
+        "src": "/media/verbs/look/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Gabriel_looking_through_pretend_binoculars_at_a_playground,_Parque_das_Na%C3%A7%C3%B5es,_Lisbon,_Portugal_julesvernex2.jpg",
+        "creator": "Jules Verne Times Two",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/look/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Girl_Looking_Through_Binoculars_(51842300811).jpg",
+        "creator": "ShenandoahNPS",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/look/audio.wav"
+  },
+  {
+    "slug": "point",
+    "termEn": "Point",
+    "translationEs": "señalar",
+    "phoneticIpa": "/pɔɪnt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «señalar».",
+    "imageDescription": "Fotografía que representa la acción de señalar.",
+    "exampleEn": "She points to the map.",
+    "exampleEs": "Ella señala el mapa.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Man_pointing_with_his_finger.jpg",
+        "creator": "Hillebrand Steve, U.S. Fish and Wildlife Service",
+        "license": "Public domain",
+        "src": "/media/verbs/point/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_pointing_(16775293481).jpg",
+        "creator": "Seattle Parks",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/point/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/point/audio.wav"
+  },
+  {
+    "slug": "throw",
+    "termEn": "Throw",
+    "translationEs": "lanzar",
+    "phoneticIpa": "/θroʊ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «lanzar».",
+    "imageDescription": "Fotografía que representa la acción de lanzar.",
+    "exampleEn": "He throws the ball.",
+    "exampleEs": "Él lanza la pelota.",
+    "images": [
+      {
+        "src": "/media/verbs/throw/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Throwing_ball_exercise.jpg",
+        "creator": "Onwuka Glory",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/throw/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Ballistic_training_medicine_ball_throw.jpg",
+        "creator": "Airman 1st Class Monica Roybal",
+        "license": "CC0"
+      }
+    ],
+    "audioUrl": "/media/verbs/throw/audio.wav"
+  },
+  {
+    "slug": "catch",
+    "termEn": "Catch",
+    "translationEs": "atrapar",
+    "phoneticIpa": "/kætʃ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «atrapar».",
+    "imageDescription": "Fotografía que representa la acción de atrapar.",
+    "exampleEn": "She catches the ball.",
+    "exampleEs": "Ella atrapa la pelota.",
+    "images": [
+      {
+        "src": "/media/verbs/catch/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Catching_the_ball_(Unsplash).jpg",
+        "creator": "chuttersnap chuttersnap",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/catch/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Silhouette_goalkeeper_catching_the_ball_(Unsplash).jpg",
+        "creator": "david clarke davidclarke",
+        "license": "CC0"
+      }
+    ],
+    "audioUrl": "/media/verbs/catch/audio.wav"
+  },
+  {
+    "slug": "kick",
+    "termEn": "Kick",
+    "translationEs": "patear",
+    "phoneticIpa": "/kɪk/",
+    "hint": "Observa la acción y piensa en el verbo que significa «patear».",
+    "imageDescription": "Fotografía que representa la acción de patear.",
+    "exampleEn": "He kicks the ball.",
+    "exampleEs": "Él patea la pelota.",
+    "images": [
+      {
+        "src": "/media/verbs/kick/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Deb_Haaland_kicking_a_soccer_ball.jpg",
+        "creator": "Deb Haaland",
+        "license": "Public domain"
+      },
+      {
+        "src": "/media/verbs/kick/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Boy_Kicking_Soccer_Ball_at_Adirondack_Camp_in_NY.jpg",
+        "creator": "ADKPhoto",
+        "license": "CC0"
+      }
+    ],
+    "audioUrl": "/media/verbs/kick/audio.wav"
+  },
+  {
+    "slug": "hit",
+    "termEn": "Hit",
+    "translationEs": "golpear",
+    "phoneticIpa": "/hɪt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «golpear».",
+    "imageDescription": "Fotografía que representa la acción de golpear.",
+    "exampleEn": "She hits the ball.",
+    "exampleEs": "Ella golpea la pelota.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Stacey_Brinson_hits_the_ball_with_her_racket_as_she_prepares_to_take_part_in_the_tennis_competition_during_the_Special_Olympics_at_Coonskin_Park_in_Charleston,_W.Va.,_June_4,_2011_110604-F-NH898-009.jpg",
+        "creator": "Tech. Sgt. Bryan G. Stevens",
+        "license": "Public domain",
+        "src": "/media/verbs/hit/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Samuele_Bruno_Hitting.webp",
+        "creator": "Sam13314553",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/hit/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/hit/audio.wav"
+  },
+  {
+    "slug": "push",
+    "termEn": "Push",
+    "translationEs": "empujar",
+    "phoneticIpa": "/pʊʃ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «empujar».",
+    "imageDescription": "Fotografía que representa la acción de empujar.",
+    "exampleEn": "He pushes the cart.",
+    "exampleEs": "Él empuja el carrito.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_collecting_recyclables,_pushing_a_cart_on_the_road_in_Ebisu.jpg",
+        "creator": "Syced",
+        "license": "CC0",
+        "src": "/media/verbs/push/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:AMISH_HOUSEWIFE_PUSHES_SHOPPING_CART_OF_GROCERIES_TO_HER_PARKED_HORSE_AND_BUGGY_-_NARA_-_550094.jpg",
+        "creator": "Frank John Aleksandrowicz",
+        "license": "Public domain",
+        "src": "/media/verbs/push/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/push/audio.wav"
+  },
+  {
+    "slug": "pull",
+    "termEn": "Pull",
+    "translationEs": "halar",
+    "phoneticIpa": "/pʊl/",
+    "hint": "Observa la acción y piensa en el verbo que significa «halar».",
+    "imageDescription": "Fotografía que representa la acción de halar.",
+    "exampleEn": "They pull the rope.",
+    "exampleEs": "Ellos halan la cuerda.",
+    "images": [
+      {
+        "src": "/media/verbs/pull/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_pulling_rope_at_an_event_in_a_busy_indoor_space.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0"
+      },
+      {
+        "src": "/media/verbs/pull/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Men_pulling_a_rope_during_a_tug_of_war_game.jpg",
+        "creator": "Samson Ssemakadde",
+        "license": "CC0"
+      }
+    ],
+    "audioUrl": "/media/verbs/pull/audio.wav"
+  },
+  {
+    "slug": "open",
+    "termEn": "Open",
+    "translationEs": "abrir",
+    "phoneticIpa": "/ˈoʊpən/",
+    "hint": "Observa la acción y piensa en el verbo que significa «abrir».",
+    "imageDescription": "Fotografía que representa la acción de abrir.",
+    "exampleEn": "I open the door.",
+    "exampleEs": "Abro la puerta.",
+    "images": [
+      {
+        "src": "/media/verbs/open/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_person_is_opening_a_door_to_enter_a_room_with_soft_lighting_and_wooden_floor_at_home.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0"
+      },
+      {
+        "src": "/media/verbs/open/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Opening_Nederlandse_Bank_door_koningin_Juliana,_Bestanddeelnr_921-3278.jpg",
+        "creator": "Jack de Nijs for Anefo",
+        "license": "CC0"
+      }
+    ],
+    "audioUrl": "/media/verbs/open/audio.wav"
+  },
+  {
+    "slug": "play",
+    "termEn": "Play",
+    "translationEs": "jugar",
+    "phoneticIpa": "/pleɪ/",
+    "hint": "Observa la actividad compartida y piensa en un verbo de diversión.",
+    "imageDescription": "Fotografía de personas que juegan.",
+    "exampleEn": "The children play outside.",
+    "exampleEs": "Los niños juegan afuera.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_group_of_young_people_playing_ball,_Ismailia,_Egypt.jpg",
+        "creator": "Husseingallery",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/play/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:People_Playing_football.jpg",
+        "creator": "Baxito",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/play/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/play/audio.wav"
+  },
+  {
+    "slug": "wash",
+    "termEn": "Wash",
+    "translationEs": "lavar",
+    "phoneticIpa": "/wɑːʃ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «lavar».",
+    "imageDescription": "Fotografía que representa la acción de lavar.",
+    "exampleEn": "Wash your hands.",
+    "exampleEs": "Lávate las manos.",
+    "images": [
+      {
+        "src": "/media/verbs/wash/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_Man_Washing_His_Hands_Using_a_Hand_Pump-070A6382.jpg",
+        "creator": "Bijay Chaurasia",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/wash/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Washing_hands_with_soap_(1).jpg",
+        "creator": "Beat Ruest",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/wash/audio.wav"
+  },
+  {
+    "slug": "clean",
+    "termEn": "Clean",
+    "translationEs": "limpiar",
+    "phoneticIpa": "/kliːn/",
+    "hint": "Observa la acción y piensa en el verbo que significa «limpiar».",
+    "imageDescription": "Fotografía que representa la acción de limpiar.",
+    "exampleEn": "He cleans the room.",
+    "exampleEs": "Él limpia la habitación.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_cleaning_a_wooden_countertop_in_a_bright_room_using_orange_cleaning_spray_and_wearing_rubber_gloves.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/clean/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_cleaning_living_room_floor_with_vacuum_cleaner_in_modern_home.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/clean/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/clean/audio.wav"
+  },
+  {
+    "slug": "brush",
+    "termEn": "Brush",
+    "translationEs": "cepillar",
+    "phoneticIpa": "/brʌʃ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «cepillar».",
+    "imageDescription": "Fotografía que representa la acción de cepillar.",
+    "exampleEn": "I brush my teeth.",
+    "exampleEs": "Me cepillo los dientes.",
+    "images": [
+      {
+        "src": "/media/verbs/brush/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_brushes_teeth_while_wearing_eye_patches_in_a_bathroom_setting.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0"
+      },
+      {
+        "src": "/media/verbs/brush/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Person_brushes_teeth_in_bathroom.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/brush/audio.wav"
+  },
+  {
+    "slug": "cut",
+    "termEn": "Cut",
+    "translationEs": "cortar",
+    "phoneticIpa": "/kʌt/",
+    "hint": "Observa la acción y piensa en el verbo que significa «cortar».",
+    "imageDescription": "Fotografía que representa la acción de cortar.",
+    "exampleEn": "She cuts the vegetables.",
+    "exampleEs": "Ella corta las verduras.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Man_chopping_vegetables_in_a_cozy_kitchen_cabin_surrounded_by_friends_cooking_together.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/cut/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Chef_prepares_fresh_ingredients_by_chopping_red_vegetables.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/cut/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/cut/audio.wav"
+  },
+  {
+    "slug": "build",
+    "termEn": "Build",
+    "translationEs": "construir",
+    "phoneticIpa": "/bɪld/",
+    "hint": "Observa la acción y piensa en el verbo que significa «construir».",
+    "imageDescription": "Fotografía que representa la acción de construir.",
+    "exampleEn": "They build a house.",
+    "exampleEs": "Ellos construyen una casa.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:House_Construction_Labour_Workers_2_-_Invermere,_British_Columbia.jpg",
+        "creator": "PatInver",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/build/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:House_Construction_Labour_Workers_3_-_Invermere,_British_Columbia.jpg",
+        "creator": "PatInver",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/build/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/build/audio.wav"
+  },
+  {
+    "slug": "fix",
+    "termEn": "Fix",
+    "translationEs": "reparar",
+    "phoneticIpa": "/fɪks/",
+    "hint": "Observa la acción y piensa en el verbo que significa «reparar».",
+    "imageDescription": "Fotografía que representa la acción de reparar.",
+    "exampleEn": "He fixes the bicycle.",
+    "exampleEs": "Él repara la bicicleta.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Car_mechanic_fixing_a_damaged_part_of_a_car.jpg",
+        "creator": "Shixart1985",
+        "license": "CC BY 2.0",
+        "src": "/media/verbs/fix/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Roadside_Car_Repair_Mechanic_at_Work.jpg",
+        "creator": "Johnnybam",
+        "license": "CC BY-SA 4.0",
+        "src": "/media/verbs/fix/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/fix/audio.wav"
+  },
+  {
+    "slug": "carry",
+    "termEn": "Carry",
+    "translationEs": "cargar",
+    "phoneticIpa": "/ˈkæri/",
+    "hint": "Observa la acción y piensa en el verbo que significa «cargar».",
+    "imageDescription": "Fotografía que representa la acción de cargar.",
+    "exampleEn": "She carries the boxes.",
+    "exampleEs": "Ella carga las cajas.",
+    "images": [
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Man_carrying_boxes_on_a_bicycle.jpg",
+        "creator": "Wilfredor",
+        "license": "CC0",
+        "src": "/media/verbs/carry/1.jpg"
+      },
+      {
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Girl_carrying_her_father%27s_lunch_pail,_Omaha_10439u.jpg",
+        "creator": "John Vachon",
+        "license": "Public domain",
+        "src": "/media/verbs/carry/2.jpg"
+      }
+    ],
+    "audioUrl": "/media/verbs/carry/audio.wav"
+  },
+  {
+    "slug": "lift",
+    "termEn": "Lift",
+    "translationEs": "levantar",
+    "phoneticIpa": "/lɪft/",
+    "hint": "Observa la acción y piensa en el verbo que significa «levantar».",
+    "imageDescription": "Fotografía que representa la acción de levantar.",
+    "exampleEn": "He lifts the box.",
+    "exampleEs": "Él levanta la caja.",
+    "images": [
+      {
+        "src": "/media/verbs/lift/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Lifting_weight.jpg",
+        "creator": "Nassmart1",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/lift/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Lifting_weights_DVIDS206128.jpg",
+        "creator": "Sgt. David McLean",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/lift/audio.wav"
+  },
+  {
+    "slug": "buy",
+    "termEn": "Buy",
+    "translationEs": "comprar",
+    "phoneticIpa": "/baɪ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «comprar».",
+    "imageDescription": "Fotografía que representa la acción de comprar.",
+    "exampleEn": "We buy fresh fruit.",
+    "exampleEs": "Compramos fruta fresca.",
+    "images": [
+      {
+        "src": "/media/verbs/buy/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Buying_groceries_in_Mumbai_(1109).jpg",
+        "creator": "Nicolas Vigier",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/buy/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Woman_buying_groceries_during_the_COVID-19_lockdown,_Mercado_de_Arroios,_Lisbon,_Portugal_julesvernex2.jpg",
+        "creator": "Jules Verne Times Two",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/buy/audio.wav"
+  },
+  {
+    "slug": "sell",
+    "termEn": "Sell",
+    "translationEs": "vender",
+    "phoneticIpa": "/sel/",
+    "hint": "Observa la acción y piensa en el verbo que significa «vender».",
+    "imageDescription": "Fotografía que representa la acción de vender.",
+    "exampleEn": "They sell flowers.",
+    "exampleEs": "Ellos venden flores.",
+    "images": [
+      {
+        "src": "/media/verbs/sell/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Child_working_selling_vegetables_in_downtown_Maracaibo.jpg",
+        "creator": "Wilfredor",
+        "license": "CC0"
+      },
+      {
+        "src": "/media/verbs/sell/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Selling_rice_on_Gangtok_market,_Sikkim,_30135u.jpg",
+        "creator": "Alice S. Kandell",
+        "license": "Public domain"
+      }
+    ],
+    "audioUrl": "/media/verbs/sell/audio.wav"
+  },
+  {
+    "slug": "teach",
+    "termEn": "Teach",
+    "translationEs": "enseñar",
+    "phoneticIpa": "/tiːtʃ/",
+    "hint": "Observa la acción y piensa en el verbo que significa «enseñar».",
+    "imageDescription": "Fotografía que representa la acción de enseñar.",
+    "exampleEn": "She teaches English.",
+    "exampleEs": "Ella enseña inglés.",
+    "images": [
+      {
+        "src": "/media/verbs/teach/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_12.jpg",
+        "creator": "Harrison Keely",
+        "license": "CC BY 4.0"
+      },
+      {
+        "src": "/media/verbs/teach/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_08.jpg",
+        "creator": "Harrison Keely",
+        "license": "CC BY 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/teach/audio.wav"
+  },
+  {
+    "slug": "learn",
+    "termEn": "Learn",
+    "translationEs": "aprender",
+    "phoneticIpa": "/lɝːn/",
+    "hint": "Observa la acción y piensa en el verbo que significa «aprender».",
+    "imageDescription": "Fotografía que representa la acción de aprender.",
+    "exampleEn": "We learn a new word.",
+    "exampleEs": "Aprendemos una palabra nueva.",
+    "images": [
+      {
+        "src": "/media/verbs/learn/1.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:University_students_in_a_technology_learning_classroom.jpg",
+        "creator": "Ellamaria elshmod",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "src": "/media/verbs/learn/2.jpg",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Students_learning_in_a_classroom_12234.jpg",
+        "creator": "Christian Yakubu",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "audioUrl": "/media/verbs/learn/audio.wav"
+  }
+]

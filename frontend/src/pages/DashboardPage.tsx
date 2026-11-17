@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, BookOpen, Briefcase, Check, Laptop2, Leaf, Play } from 'lucide-react';
+import { ArrowRight, BookOpen, Briefcase, Check, Laptop2, Leaf, Play, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AlmanacCard } from '../components/AlmanacCard';
 import { AlmanacWordDetail, AlmanacWordItem } from '../types';
@@ -7,9 +7,10 @@ import { almanacApi } from '../features/almanac/almanacApi';
 import { WordDetailDialog } from '../features/almanac/WordDetailDialog';
 
 const categories = [
-  { slug: 'technology', label: 'Tecnología', description: 'Palabras para tu mundo digital', icon: Laptop2 },
-  { slug: 'office', label: 'Oficina', description: 'Objetos que usas a diario', icon: Briefcase },
-  { slug: 'fruits', label: 'Frutas', description: 'Aprende con formas y colores', icon: Leaf },
+  { slug: 'technology', label: 'Tecnología', description: 'Palabras para tu mundo digital', icon: Laptop2, href: '/learn/technology' },
+  { slug: 'office', label: 'Oficina', description: 'Objetos que usas a diario', icon: Briefcase, href: '/learn/office' },
+  { slug: 'fruits', label: 'Frutas', description: 'Aprende con formas y colores', icon: Leaf, href: '/learn/fruits' },
+  { slug: 'verbs', label: 'Verbos', description: '50 acciones en imágenes reales', icon: Zap, href: '/verbs' },
 ];
 
 export function DashboardPage() {
@@ -51,13 +52,13 @@ export function DashboardPage() {
 
       <div>
         <div className="mb-5"><p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Elige un camino</p><h2 className="mt-1 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">Sesiones por categoría</h2></div>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {categories.map((category, index) => {
             const Icon = category.icon;
-            return <Link key={category.slug} to={`/learn/${category.slug}`} className="group flex min-h-[180px] flex-col rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-[0_1px_2px_rgba(28,25,23,0.04)] transition-all duration-200 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-[0_12px_30px_-18px_rgba(6,95,70,0.35)] active:scale-[0.99] sm:min-h-[210px] sm:p-6">
+            return <Link key={category.slug} to={category.href} className="group flex min-h-[180px] flex-col rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-[0_1px_2px_rgba(28,25,23,0.04)] transition-all duration-200 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-[0_12px_30px_-18px_rgba(6,95,70,0.35)] active:scale-[0.99] sm:min-h-[210px] sm:p-6">
               <div className="flex items-start justify-between"><span className="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-100 text-emerald-900 group-hover:bg-emerald-50"><Icon className="h-6 w-6" strokeWidth={1.8} aria-hidden="true" /></span><span className="font-mono text-xs tabular-nums text-stone-400">0{index + 1}</span></div>
               <h3 className="mt-7 text-xl font-bold tracking-tight text-stone-900">{category.label}</h3><p className="mt-1 text-sm text-stone-600">{category.description}</p>
-              <span className="mt-auto flex items-center gap-2 pt-5 text-sm font-bold text-emerald-800">Iniciar sesión <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" /></span>
+              <span className="mt-auto flex items-center gap-2 pt-5 text-sm font-bold text-emerald-800">{category.slug === 'verbs' ? 'Explorar verbos' : 'Iniciar sesión'} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" /></span>
             </Link>;
           })}
         </div>

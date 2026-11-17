@@ -1,4 +1,4 @@
-import { BookOpen, LogOut } from 'lucide-react';
+import { BookOpen, LogOut, Zap } from 'lucide-react';
 import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom';
 import { AlmanacPage } from './features/almanac/AlmanacPage';
 import { AuthProvider, useAuth } from './features/auth/AuthContext';
@@ -6,6 +6,7 @@ import { AuthPage } from './features/auth/AuthPage';
 import { StudySessionPage } from './features/learning/StudySessionPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { BrandMark } from './components/BrandMark';
+import { VerbsPage } from './features/verbs/VerbsPage';
 
 function AuthenticatedApp() {
   const { user, loading, logout } = useAuth();
@@ -26,6 +27,9 @@ function AuthenticatedApp() {
             Vocab<span className="text-emerald-800">App</span>
           </Link>
           <nav className="flex items-center gap-2" aria-label="Navegación principal">
+            <Link to="/verbs" className="inline-flex min-h-touch min-w-touch items-center justify-center gap-2 rounded-xl px-2 text-sm font-bold text-stone-700 transition-colors hover:bg-white hover:text-emerald-800" aria-label="Verbos">
+              <Zap className="h-5 w-5" aria-hidden="true" /><span className="hidden lg:inline">Verbos</span>
+            </Link>
             <Link to="/almanac" className="inline-flex min-h-touch items-center gap-2 rounded-xl px-3 text-sm font-bold text-stone-700 transition-colors hover:bg-white hover:text-emerald-800">
               <BookOpen className="h-4 w-4" aria-hidden="true" /><span className="hidden sm:inline">Almanaque</span>
             </Link>
@@ -40,6 +44,8 @@ function AuthenticatedApp() {
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/almanac" element={<AlmanacPage />} />
+          <Route path="/verbs" element={<VerbsPage />} />
+          <Route path="/verbs/:slug" element={<VerbsPage />} />
           <Route path="/learn/:categorySlug?" element={<StudySessionPage />} />
         </Routes>
       </main>

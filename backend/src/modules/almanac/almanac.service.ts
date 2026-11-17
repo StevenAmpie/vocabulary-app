@@ -82,7 +82,9 @@ export class AlmanacService {
             translationEs: word.sentences[0].sentence.translationEs,
             audioUrl: word.sentences[0].sentence.audioUrl ?? undefined,
           }
-        : undefined,
+        : word.exampleEn && word.exampleEs
+          ? { sentenceEn: word.exampleEn, translationEs: word.exampleEs }
+          : undefined,
       progress: {
         directSuccessCount: progress.directSuccessCount,
         contextSuccessCount: progress.contextSuccessCount,
@@ -112,6 +114,8 @@ export class AlmanacService {
       translationEs: string;
       phoneticIpa: string;
       imageUrl: string;
+      imageUrls: string[];
+      imageCredits: unknown;
       audioUrl: string;
       categorySlug: string;
       difficultyScore: number;
@@ -130,6 +134,8 @@ export class AlmanacService {
       translationEs: word.translationEs,
       phoneticIpa: word.phoneticIpa,
       imageUrl: word.imageUrl,
+      imageUrls: word.imageUrls.length ? word.imageUrls : [word.imageUrl],
+      imageCredits: word.imageCredits,
       audioUrl: word.audioUrl,
       categorySlug: word.categorySlug,
       difficultyScore: word.difficultyScore,

@@ -3,6 +3,10 @@
 Monorepo de la aplicación de vocabulario visual: `frontend/` (React y Vite),
 `backend/` (NestJS, Prisma y Fastify) y `compose.yaml` (PostgreSQL y Redis).
 
+Incluye 12 objetos y 50 verbos frecuentes. Las fotografías y pronunciaciones se
+guardan en `frontend/public/media`; las fichas, ejemplos y créditos están en
+`content/`. No se descargan imágenes ni audios durante el uso de la aplicación.
+
 ## Requisitos
 
 - Docker Engine con Compose en la VM.
@@ -50,3 +54,13 @@ configura un proxy HTTPS para ambos servicios.
 
 Para detener los servicios de datos: `docker compose down`. Los datos persisten en
 volúmenes de Docker.
+
+Después de actualizar un clon existente, ejecuta `git pull`,
+`cd backend`, `bunx prisma migrate deploy` y `bunx prisma db seed` para aplicar
+el contenido nuevo a PostgreSQL. La carga usa `upsert` y puede repetirse.
+
+Las fotografías provienen de Wikimedia Commons; consulta
+[`content/IMAGE_CREDITS.md`](content/IMAGE_CREDITS.md) y los créditos que aparecen
+en cada ficha. Los objetos tienen su propio registro en
+[`content/OBJECT_IMAGE_CREDITS.md`](content/OBJECT_IMAGE_CREDITS.md) y sus datos
+de atribución en `content/noun-images.json`.

@@ -9,3 +9,5 @@
 .agents/
 .codex/
 coverage/
+**/__pycache__/
+**/*.pyc

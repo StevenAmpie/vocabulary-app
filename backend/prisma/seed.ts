@@ -1,12 +1,37 @@
 import { PrismaClient, WordState } from '@prisma/client';
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 const prisma = new PrismaClient();
 
 const categories = [
-  { slug: 'technology', name: 'Tecnología', description: 'Dispositivos de uso cotidiano', iconUrl: '💻', displayOrder: 1 },
-  { slug: 'office', name: 'Oficina', description: 'Objetos del espacio de trabajo', iconUrl: '🏢', displayOrder: 2 },
-  { slug: 'fruits', name: 'Frutas', description: 'Alimentos y sabores cotidianos', iconUrl: '🍎', displayOrder: 3 },
+  { slug: 'technology', name: 'Tecnología', description: 'Dispositivos de uso cotidiano', iconUrl: null, displayOrder: 1 },
+  { slug: 'office', name: 'Oficina', description: 'Objetos del espacio de trabajo', iconUrl: null, displayOrder: 2 },
+  { slug: 'fruits', name: 'Frutas', description: 'Alimentos y sabores cotidianos', iconUrl: null, displayOrder: 3 },
+  { slug: 'verbs', name: 'Verbos', description: 'Acciones de uso cotidiano', iconUrl: null, displayOrder: 4 },
 ];
+
+type ImageCredit = { src: string; creditUrl: string; creator: string; license: string };
+type VerbSeed = {
+  slug: string;
+  termEn: string;
+  translationEs: string;
+  phoneticIpa: string;
+  hint: string;
+  imageDescription: string;
+  exampleEn?: string;
+  exampleEs?: string;
+  images: ImageCredit[];
+  audioUrl?: string;
+};
+
+const contentPath = resolve(__dirname, '../../content');
+const verbSeeds = JSON.parse(readFileSync(resolve(contentPath, 'verbs.json'), 'utf8')) as VerbSeed[];
+if (verbSeeds.length < 50) throw new Error('El catálogo debe contener al menos 50 verbos.');
+const nounImagesPath = resolve(contentPath, 'noun-images.json');
+const nounImages = existsSync(nounImagesPath)
+  ? JSON.parse(readFileSync(nounImagesPath, 'utf8')) as Record<string, ImageCredit[]>
+  : {} as Record<string, ImageCredit[]>;
 
 const words = [
   ['11111111-1111-4111-8111-111111111111', 'keyboard', 'Keyboard', 'Teclado', '/ˈkiː.bɔːrd/', 'technology', 1, 'Piensa en el dispositivo que utilizas para escribir.', 'Un periférico rectangular con muchas teclas.'],
@@ -29,6 +54,8 @@ async function main() {
   }
 
   for (const [id, slug, termEn, translationEs, phoneticIpa, categorySlug, difficultyScore, hint, imageDescription] of words) {
+    const images = nounImages[slug] ?? [];
+    if (images.length < 2) throw new Error(`El objeto ${slug} necesita al menos dos fotografías.`);
     const data = {
       id,
       slug,
@@ -39,10 +66,33 @@ async function main() {
       difficultyScore,
       hint,
       imageDescription,
-      imageUrl: `/media/images/${slug}.svg`,
+      imageUrl: images[0].src,
+      imageUrls: images.map((image) => image.src),
+      imageCredits: images,
       audioUrl: `/media/audio/${slug}.mp3`,
     };
     await prisma.word.upsert({ where: { id }, create: data, update: data });
+  }
+
+  for (const verb of verbSeeds) {
+    if (verb.images.length < 2) throw new Error(`El verbo ${verb.slug} necesita al menos dos imágenes.`);
+    const data = {
+      slug: verb.slug,
+      termEn: verb.termEn,
+      translationEs: verb.translationEs,
+      phoneticIpa: verb.phoneticIpa,
+      hint: verb.hint,
+      imageDescription: verb.imageDescription,
+      imageUrl: verb.images[0].src,
+      imageUrls: verb.images.map((image) => image.src),
+      imageCredits: verb.images,
+      audioUrl: verb.audioUrl ?? `/media/verbs/${verb.slug}/audio.wav`,
+      exampleEn: verb.exampleEn,
+      exampleEs: verb.exampleEs,
+      categorySlug: 'verbs',
+      difficultyScore: 1,
+    };
+    await prisma.word.upsert({ where: { slug: verb.slug }, create: data, update: data });
   }
 
   for (let index = 0; index < words.length; index += 1) {

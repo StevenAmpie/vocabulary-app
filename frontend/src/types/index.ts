@@ -22,6 +22,8 @@ export interface Word {
   phoneticIpa: string;
   audioUrl: string;
   imageUrl: string;
+  imageUrls?: string[];
+  imageCredits?: Array<{ src: string; creditUrl: string; creator: string; license: string }>;
   categorySlug: string;
   difficultyScore: number;
 }
@@ -36,15 +38,34 @@ export interface ContextSentence {
 export interface LearningOption {
   id: string;
   label: string;
+  imageUrl?: string;
+  imageDescription?: string;
 }
 
 export interface LearningExercise {
   id: string;
+  mode?: 'image-to-word' | 'word-to-image' | 'translation-to-word';
+  termEn?: string;
+  phoneticIpa?: string;
+  translationEs?: string;
   prompt: string;
   imageUrl: string;
   imageDescription: string;
   audioUrl?: string;
   options: LearningOption[];
+}
+
+export interface VerbItem {
+  id: string;
+  slug: string;
+  termEn: string;
+  translationEs: string;
+  phoneticIpa: string;
+  audioUrl: string;
+  imageUrls: string[];
+  imageCredits?: Array<{ src: string; creditUrl: string; creator: string; license: string }>;
+  exampleEn?: string;
+  exampleEs?: string;
 }
 
 export interface LearningSessionProgress {

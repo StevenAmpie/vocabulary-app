@@ -8,6 +8,7 @@ import {
 import { Prisma } from '@prisma/client';
 import { randomUUID } from 'node:crypto';
 import { PrismaService } from '../../common/prisma.service';
+import { activeVerbSlugs } from '../../common/verb-catalog';
 import { CreateLearningSessionDto } from './dto/create-learning-session.dto';
 import { RecordAttemptDto } from './dto/record-attempt.dto';
 import { consecutiveDayCount, nextReviewDate, stateForSuccessCount } from './learning.rules';
@@ -34,6 +35,7 @@ export class LearningService {
   ): Promise<CreateLearningSessionResponse> {
     const categorySlug = dto.categorySlug ?? 'technology';
     const allWords = await this.prisma.word.findMany({
+      where: { OR: [{ categorySlug: { not: 'verbs' } }, { slug: { in: activeVerbSlugs() } }] },
       orderBy: [{ category: { displayOrder: 'asc' } }, { difficultyScore: 'asc' }],
     });
     const categoryWords = allWords.filter((word) => word.categorySlug === categorySlug);
@@ -41,14 +43,15 @@ export class LearningService {
       throw new BadRequestException(`No hay ejercicios disponibles para la categoría "${categorySlug}".`);
     }
 
-    let selectedWords = categoryWords.slice(0, dto.targetWordCount ?? Math.min(10, categoryWords.length));
+    let selectedWords = (categorySlug === 'verbs' ? this.shuffle(categoryWords) : categoryWords)
+      .slice(0, dto.targetWordCount ?? Math.min(10, categoryWords.length));
     if (dto.wordId) {
       const requested = allWords.find((word) => word.id === dto.wordId);
       if (!requested) throw new NotFoundException('La palabra solicitada no existe.');
       selectedWords = [requested];
     }
 
-    const exercises: SessionExercise[] = selectedWords.map((word) => {
+    const exercises: SessionExercise[] = selectedWords.map((word, index) => {
       const sameCategory = categoryWords.filter((candidate) => candidate.id !== word.id);
       const fallback = allWords.filter(
         (candidate) => candidate.id !== word.id && !sameCategory.some(({ id }) => id === candidate.id),
@@ -58,6 +61,10 @@ export class LearningService {
         id: randomUUID(),
         wordId: word.id,
         optionIds: this.shuffle([word, ...distractors]).map(({ id }) => id),
+        mode: word.categorySlug !== 'verbs' ? 'image-to-word'
+          : index % 3 === 1 ? 'word-to-image'
+          : index % 3 === 2 ? 'translation-to-word'
+          : 'image-to-word',
       };
     });
 
@@ -88,11 +95,24 @@ export class LearningService {
     return {
       exercise: {
         id: current.id,
-        prompt: '¿Qué término en inglés representa esta imagen?',
-        imageUrl: word.imageUrl,
-        imageDescription: word.imageDescription,
-        audioUrl: word.audioUrl,
-        options: current.optionIds.map((id) => ({ id, label: optionsById.get(id)?.termEn ?? '—' })),
+        mode: current.mode ?? 'image-to-word',
+        prompt: current.mode === 'word-to-image'
+          ? `¿Cuál imagen representa la acción «${word.termEn}»?`
+          : current.mode === 'translation-to-word'
+            ? `¿Cómo se dice «${word.translationEs}» en inglés?`
+          : '¿Qué término en inglés representa esta imagen?',
+        termEn: current.mode === 'word-to-image' ? word.termEn : undefined,
+        translationEs: current.mode === 'translation-to-word' ? word.translationEs : undefined,
+        phoneticIpa: current.mode === 'word-to-image' ? word.phoneticIpa : undefined,
+        imageUrl: current.mode === 'image-to-word' ? word.imageUrl : '',
+        imageDescription: current.mode === 'image-to-word' ? word.imageDescription : '',
+        audioUrl: current.mode === 'translation-to-word' ? undefined : word.audioUrl,
+        options: current.optionIds.map((id) => ({
+          id,
+          label: optionsById.get(id)?.termEn ?? '—',
+          imageUrl: current.mode === 'word-to-image' ? optionsById.get(id)?.imageUrl : undefined,
+          imageDescription: current.mode === 'word-to-image' ? optionsById.get(id)?.imageDescription : undefined,
+        })),
       },
       session: {
         position: Math.min(session.processedInitialExerciseIds.length + 1, session.total),
@@ -211,8 +231,8 @@ export class LearningService {
                 audioUrl: word.audioUrl,
               },
               contextSentence: {
-                sentenceEn: sentenceLink?.sentence.sentenceEn ?? `This is a ${word.termEn.toLowerCase()}.`,
-                translationEs: sentenceLink?.sentence.translationEs ?? `Esto es ${word.translationEs.toLowerCase()}.`,
+                sentenceEn: sentenceLink?.sentence.sentenceEn ?? word.exampleEn ?? `This is a ${word.termEn.toLowerCase()}.`,
+                translationEs: sentenceLink?.sentence.translationEs ?? word.exampleEs ?? `Esto es ${word.translationEs.toLowerCase()}.`,
                 recalledWordId,
               },
             }

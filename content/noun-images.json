@@ -1,0 +1,170 @@
+{
+  "keyboard": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Keyboard_8.jpg",
+      "creator": "Oboy2009",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/keyboard/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Backlit_keyboard.jpg",
+      "creator": "Colin",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/keyboard/2.jpg"
+    }
+  ],
+  "headphones": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Headphones_1.jpg",
+      "creator": "No machine-readable author provided. PJ assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "src": "/media/objects/headphones/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Headphones_and_smartphone_(Unsplash).jpg",
+      "creator": "wu yi takeshi2",
+      "license": "CC0",
+      "src": "/media/objects/headphones/2.jpg"
+    }
+  ],
+  "screen": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Monitor_CM_frente.jpeg",
+      "creator": "EEIM",
+      "license": "CC BY-SA 3.0",
+      "src": "/media/objects/screen/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Monitor_CM_diagonal.jpeg",
+      "creator": "EEIM",
+      "license": "CC BY-SA 3.0",
+      "src": "/media/objects/screen/2.jpg"
+    }
+  ],
+  "mouse": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Red_computer_mouse.jpg",
+      "creator": "No machine-readable author provided. Soulreaper assumed (based on copyright claims).",
+      "license": "Public domain",
+      "src": "/media/objects/mouse/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Acer_computer_mouse_on_paper.jpg",
+      "creator": "Bhullargraphic",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/mouse/2.jpg"
+    }
+  ],
+  "desk": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:LA2_Facit_office_left.jpg",
+      "creator": "LA2",
+      "license": "CC BY-SA 3.0",
+      "src": "/media/objects/desk/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:LA2_Facit_office_right.jpg",
+      "creator": "LA2",
+      "license": "CC BY-SA 3.0",
+      "src": "/media/objects/desk/2.jpg"
+    }
+  ],
+  "chair": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Steelcase_Think_office_chair.jpg",
+      "creator": "Amakuha",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/chair/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Sihoo_M57_mesh_office_chair_01.jpg",
+      "creator": "Waldyrious",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/chair/2.jpg"
+    }
+  ],
+  "notebook": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Vihko.jpg",
+      "creator": "No machine-readable author provided. Wallenius~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "src": "/media/objects/notebook/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Daftar.jpg",
+      "creator": "Solijon Solayev",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/notebook/2.jpg"
+    }
+  ],
+  "pen": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Ballpoint_Pen.jpg",
+      "creator": "Ryan Hodnett",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/pen/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Ballpoint_Pen_DS.jpg",
+      "creator": "Augustus Binu : flickr",
+      "license": "CC BY-SA 3.0",
+      "src": "/media/objects/pen/2.jpg"
+    }
+  ],
+  "apple": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Apple-2924531_1920.jpg",
+      "creator": "Pixel2013",
+      "license": "CC0",
+      "src": "/media/objects/apple/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Red_and_green_apple_fruit.jpg",
+      "creator": "Rose ugwoke",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/apple/2.jpg"
+    }
+  ],
+  "banana": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:HK_fruit_yellow_bananas_December_2021_01.jpg",
+      "creator": "YatnimetAH Ngasual Ruby",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/banana/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:HK_fruit_yellow_%E9%A6%99%E8%95%89_banana_Aloha_August_2022_Px3_01.jpg",
+      "creator": "雷神18號關仁里",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/banana/2.jpg"
+    }
+  ],
+  "orange": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Orange_fruit_sliced.jpg",
+      "creator": "Paolo Neo",
+      "license": "Public domain",
+      "src": "/media/objects/orange/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Orange_Fruit_(18379).jpg",
+      "creator": "SarKaLay",
+      "license": "CC0",
+      "src": "/media/objects/orange/2.jpg"
+    }
+  ],
+  "grapes": [
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Close_up_of_fresh_red_grapes_at_Sadarghat_fruit_market_Dhaka.jpg",
+      "creator": "A S M Jobaer",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/grapes/1.jpg"
+    },
+    {
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:DFC_6149_Bunches_of_ripe_red_grapes_glistening_with_freshness.jpg",
+      "creator": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "src": "/media/objects/grapes/2.jpg"
+    }
+  ]
+}

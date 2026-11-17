@@ -186,7 +186,7 @@ export function StudySessionPage() {
           </Link>
           <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Sesión de estudio</p>
           <h1 id="study-title" ref={titleRef} tabIndex={-1} className="mt-1 text-3xl font-black tracking-tight text-stone-900 sm:text-4xl">
-            {categorySlug === 'technology' ? 'Tecnología cotidiana' : categorySlug === 'office' ? 'Objetos de oficina' : categorySlug === 'fruits' ? 'Frutas' : 'Sesión de vocabulario'}
+            {categorySlug === 'technology' ? 'Tecnología cotidiana' : categorySlug === 'office' ? 'Objetos de oficina' : categorySlug === 'fruits' ? 'Frutas' : categorySlug === 'verbs' ? 'Verbos en acción' : 'Sesión de vocabulario'}
           </h1>
         </div>
         <div className="w-full max-w-56">
@@ -227,24 +227,24 @@ export function StudySessionPage() {
         <form onSubmit={handleSubmit} className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_2px_4px_rgba(28,25,23,0.04),0_20px_55px_-28px_rgba(28,25,23,0.22)]">
           <div className="grid gap-0 md:grid-cols-[1.05fr_1fr]">
             <div className="bg-[#f0eee8] p-3 sm:p-6 md:flex md:flex-col md:justify-between">
-              <img
+              {exercise.mode === 'word-to-image' ? <div className="flex min-h-[180px] flex-col items-center justify-center rounded-2xl border border-stone-200 bg-white p-6 text-center sm:min-h-[300px]"><p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Escucha y reconoce</p><p lang="en" className="mt-4 font-serif text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl">{exercise.termEn}</p><p className="mt-2 font-mono text-sm text-stone-600">{exercise.phoneticIpa}</p></div> : exercise.mode === 'translation-to-word' ? <div className="flex min-h-[180px] flex-col items-center justify-center rounded-2xl border border-stone-200 bg-white p-6 text-center sm:min-h-[300px]"><p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Traduce la acción</p><p className="mt-4 font-serif text-3xl font-bold tracking-tight text-stone-900 sm:text-5xl">{exercise.translationEs || exercise.prompt}</p></div> : <img
                 src={exercise.imageUrl}
                 alt={exercise.imageDescription}
                 className="mx-auto aspect-[4/3] max-h-[260px] w-full rounded-2xl border border-stone-200 bg-white object-contain p-3 sm:max-h-[350px] md:aspect-square md:max-h-none"
-              />
-              <div className="mt-3 flex items-center justify-center gap-3 pb-1 md:mt-5">
+              />}
+              {exercise.mode !== 'translation-to-word' && <div className="mt-3 flex items-center justify-center gap-3 pb-1 md:mt-5">
                 <AudioPlayerButton
                   audioUrl={exercise.audioUrl}
                   label="Escuchar la pronunciación de la respuesta"
                 />
                 <span className="text-xs font-semibold text-stone-600">Escucha la palabra</span>
-              </div>
+              </div>}
             </div>
 
             <div className="flex flex-col p-4 sm:p-8">
               <fieldset disabled={pageState === 'submitting' || pageState === 'answered'}>
                 <legend className="text-xl font-extrabold leading-snug tracking-tight text-stone-900 sm:text-2xl">{exercise.prompt}</legend>
-                <p className="mt-2 text-sm leading-relaxed text-stone-600">Elige una opción. Puedes aprender de cada intento.</p>
+                <p className="mt-2 text-sm leading-relaxed text-stone-600">{exercise.mode === 'word-to-image' ? 'Elige la escena que representa esta acción.' : 'Elige una opción. Puedes aprender de cada intento.'}</p>
 
                 <div className="mt-5 grid gap-2.5 sm:grid-cols-2 sm:gap-3">
                   {exercise.options.map((option, index) => {
@@ -252,12 +252,13 @@ export function StudySessionPage() {
                     return (
                       <label
                         key={option.id}
-                        className={`flex min-h-[56px] cursor-pointer items-center gap-3 rounded-xl border-2 px-4 py-3 font-bold transition-all duration-150 active:scale-[0.99] ${
+                        className={`flex min-h-[56px] cursor-pointer ${exercise.mode === 'word-to-image' ? 'flex-col p-2' : 'items-center gap-3 px-4 py-3'} rounded-xl border-2 font-bold transition-all duration-150 active:scale-[0.99] focus-within:ring-2 focus-within:ring-emerald-800 focus-within:ring-offset-2 ${
                           isSelected
                             ? 'border-emerald-800 bg-emerald-50 text-emerald-950 shadow-[0_1px_2px_rgba(6,95,70,0.1)]'
                             : 'border-stone-200 bg-white text-stone-800 hover:border-emerald-500 hover:bg-emerald-50/40'
                         }`}
                       >
+                        {exercise.mode === 'word-to-image' && option.imageUrl && <img src={option.imageUrl} alt={option.imageDescription || `Escena de la opción ${index + 1}`} className="aspect-[4/3] w-full rounded-lg bg-stone-100 object-cover" />}
                         <input
                           type="radio"
                           name="answer"
@@ -265,9 +266,9 @@ export function StudySessionPage() {
                           checked={isSelected}
                           onChange={() => setSelectedOptionId(option.id)}
                           aria-keyshortcuts={`${index + 1}`}
-                          className="h-5 w-5 shrink-0 accent-emerald-800"
+                          className={`h-5 w-5 shrink-0 accent-emerald-800 ${exercise.mode === 'word-to-image' ? 'sr-only' : ''}`}
                         />
-                        <span lang="en" className="min-w-0 break-words">{option.label}</span>
+                        <span lang={exercise.mode === 'word-to-image' ? undefined : 'en'} className="min-w-0 break-words">{exercise.mode === 'word-to-image' ? `Opción ${index + 1}` : option.label}</span>
                         <kbd aria-hidden="true" className="ml-auto hidden rounded border border-current/20 px-2 py-0.5 font-mono text-xs opacity-70 sm:inline">{index + 1}</kbd>
                       </label>
                     );

@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import { X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AudioPlayerButton } from '../../components/AudioPlayerButton';
 import { AlmanacWordDetail } from '../../types';
@@ -7,6 +7,11 @@ import { AlmanacWordDetail } from '../../types';
 export function WordDetailDialog({ word, onClose }: { word: AlmanacWordDetail; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const [imageIndex, setImageIndex] = useState(0);
+  const images = word.imageUrls?.length ? word.imageUrls : [word.imageUrl];
+  const currentImage = images[Math.min(imageIndex, images.length - 1)];
+  const credit = word.imageCredits?.find((item) => item.src === currentImage) ?? word.imageCredits?.[imageIndex];
+  useEffect(() => setImageIndex(0), [word.id]);
   useEffect(() => {
     const previousFocus = document.activeElement as HTMLElement | null;
     const previousOverflow = document.body.style.overflow;
@@ -34,7 +39,15 @@ export function WordDetailDialog({ word, onClose }: { word: AlmanacWordDetail; o
             <X aria-hidden="true" />
           </button>
         </div>
-        <img src={word.imageUrl} alt={`Representación de ${word.termEn}`} className="aspect-[16/10] w-full rounded-2xl bg-stone-100 object-cover" />
+        <div className="relative overflow-hidden rounded-2xl bg-stone-100">
+          <img src={currentImage} alt={`Representación ${imageIndex + 1} de ${word.termEn}`} className="aspect-[16/10] w-full object-cover" />
+          {images.length > 1 && <div className="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2">
+            <button type="button" onClick={() => setImageIndex((imageIndex - 1 + images.length) % images.length)} aria-label="Imagen anterior" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-stone-900 shadow-sm active:scale-95"><ChevronLeft aria-hidden="true" /></button>
+            <span className="rounded-full bg-stone-950/85 px-3 py-1 font-mono text-xs tabular-nums text-white" aria-live="polite">{imageIndex + 1} / {images.length}</span>
+            <button type="button" onClick={() => setImageIndex((imageIndex + 1) % images.length)} aria-label="Imagen siguiente" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-stone-900 shadow-sm active:scale-95"><ChevronRight aria-hidden="true" /></button>
+          </div>}
+        </div>
+        {credit?.creditUrl && <p className="mt-2 text-xs text-stone-600">Imagen: <a href={credit.creditUrl} target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2">{credit.creator || 'Ver autoría'}</a>{credit.license ? ` · ${credit.license}` : ''}</p>}
         <div className="mt-5 flex items-start justify-between gap-4">
           <div>
             <h2 id="word-detail-title" className="break-words text-3xl font-black tracking-tight text-stone-900" lang="en">{word.termEn}</h2>

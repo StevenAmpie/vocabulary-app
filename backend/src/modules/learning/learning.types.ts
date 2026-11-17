@@ -3,11 +3,17 @@ export type WordState = 'DISCOVERED' | 'CONSOLIDATING' | 'MASTERED';
 export interface LearningOption {
   id: string;
   label: string;
+  imageUrl?: string;
+  imageDescription?: string;
 }
 
 export interface LearningExercise {
   id: string;
+  mode: 'image-to-word' | 'word-to-image' | 'translation-to-word';
   prompt: string;
+  termEn?: string;
+  translationEs?: string;
+  phoneticIpa?: string;
   imageUrl: string;
   imageDescription: string;
   audioUrl?: string;
@@ -55,6 +61,7 @@ export interface SessionExercise {
   id: string;
   wordId: string;
   optionIds: string[];
+  mode: 'image-to-word' | 'word-to-image' | 'translation-to-word';
 }
 
 export interface LearningSession {
